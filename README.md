@@ -1,14 +1,28 @@
 # common-ui
 
-A simple wrapper pattern for react frameworks, including material-ui
-
 ## tl;dr
 
-[Material UI]
+A simple wrapper pattern for react frameworks, including [Material UI]
+
+## TypeScript setup
+
+Add typescript to your project:
+
+```ts
+yarn add typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+OR
+
+Install typescript globally:
+
+```ts
+npm install -g typescript
+```
 
 ## How to contribute
 
-### [Semantic commit messages]
+### Use [Semantic commit messages]
 
 **Eg.**
 
