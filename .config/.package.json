@@ -15,10 +15,24 @@
     "react-scripts": "3.4.0",
     "typescript": "~3.7.2"
   },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.13",
+    "hygen": "^5.0.3",
+    "hygen-cra": "^1.0.0",
+    "react-test-renderer": "^16.12.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "hygen:component": "HYGEN_TMPLS=src/common-ui/_templates hygen",
+    "hygen:ui": "HYGEN_TMPLS=src/common-ui/_templates hygen"
   },
   "eslintConfig": {
     "extends": "react-app"
