@@ -3,36 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "typescript": "~3.7.2"
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-scripts": "*",
+    "typescript": "*"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.13",
-    "@storybook/addon-links": "^5.3.13",
-    "@storybook/addons": "^5.3.13",
-    "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13",
-    "hygen": "^5.0.3",
-    "hygen-cra": "^1.0.0",
-    "react-test-renderer": "^16.12.0"
+    "@storybook/addon-actions": "*",
+    "@storybook/addon-links": "*",
+    "@storybook/addons": "*",
+    "@storybook/preset-create-react-app": "*",
+    "@storybook/react": "*",
+    "hygen": "*",
+    "hygen-cra": "*",
+    "react-test-renderer": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
     "hygen:component": "HYGEN_TMPLS=src/common-ui/_templates hygen",
     "hygen:ui": "HYGEN_TMPLS=src/common-ui/_templates hygen"
+    "storybook": "storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out"
   },
   "eslintConfig": {
     "extends": "react-app"
