@@ -32,7 +32,7 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 
 ## How to contribute
 
-Here's the current [todo list](./src/common/TODO.common-ui.todo)
+Here's the current [todo list](./src/common/backstitch.todo)
 
 ### Use [Semantic commit messages]
 
@@ -54,11 +54,13 @@ We're using [Hygen](https://www.hygen.io/quick-start) to template quickly
 
 Replace NAME with the component you want to create
 
-#### For generating UI components
+#### For generating UI components with Yarn
+
+From the `home` directory (containing your `package.json`)
 
 ```zsh
-$ yarn hygen ui new --name NAME [--stateful] [--functional]
->
+$ yarn hygen:ui ui new --name NAME [--stateful] [--functional]
+
 > yarn run v1.22.0
 > $ HYGEN_TMPLS=src/common-ui/_templates hygen component new --name NAME > --functional
 >
@@ -68,6 +70,8 @@ $ yarn hygen ui new --name NAME [--stateful] [--functional]
 >        added: src/common/ui/NAME/index.js
 > ✨  Done in 0.38s.
 ```
+
+$ yarn hygen ui new --name NAME [--stateful] [--functional]
 
 Note: there's an example in [common/.config/.package.json](./common/.config/.package.json)
 

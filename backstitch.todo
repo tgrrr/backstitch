@@ -1,14 +1,6 @@
 # Backstitch TODO
 
-☐ Folder structure based on https://material-ui.com/ @created(20-03-24 13:10)
-    ☐ download material-ui docs @created(20-03-24 13:13)
-    ☐ ui/ multiple folder structure options @created(20-05-27 20:13)
-
-☐ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-05-27 20:16)
-☐ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree) @created(20-05-27 20:16)
-
-☐ Does this link works on github for common vs common-ui@created(20-05-27 20:21)
-☐ Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
+☐ fix: `src/common/` @created(20-06-04 12:53)
 
 Hygen:
     ☐ Hygen UI component setup @created(20-02-25 17:08)
@@ -18,26 +10,22 @@ Hygen:
         ☐ components
     ☐ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18)
 
-    ### Template setup
+    ☐ Add yarn scripts to `package.json` @created(20-06-04 19:08)
 
-    #### 1. Create a stories folder
+        ```json
+        "scripts": {
+            "hygen": "HYGEN_TMPLS=src/common-ui/_templates hygen",
+        },
+        ```
+    ☐ Stories @created(20-06-04 19:08)
 
-    ```zsh
-    $ mkdir src/stories && touch src/stories/index.js
-    >
-    ```
+Import each element:
+    x File structure based on https://material-ui.com/ @created(20-03-24 13:10)
+    ☐ download material-ui git setup @created(20-03-24 13:13)
 
-    #### 2. Add a yarn script to `package.json`
+☐ Does this link works on github for common vs common-ui Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
 
-    ```json
-    "scripts": {
-        "hygen:component": "HYGEN_TMPLS=src/common-ui/_templates hygen",
-        "hygen:ui": "HYGEN_TMPLS=src/common-ui/_templates hygen"
-    },
-    ```
-☐ Import each element @created(20-02-25 17:07)
-
-docs: 
+Docs: 
     ☐ Adapter pattern @created(20-05-27 20:10)
     ☐ Howto @created(20-02-25 15:03)
     ☐ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01)
@@ -45,8 +33,13 @@ docs:
 
 Later:
     ☐ CRA template + typescript @created(20-05-27 19:08)
-    ☐ pages @created(20-05-27 20:10)
+    pages:
+        ☐ add containers @created(20-06-04 12:37)
+        index file in templates should just point to container
 
+    Cypress:
+        ☐ Can I run cypress tests that are throughout the project? @created(20-06-04 12:53)
+        ? move tests to cypress folder @created(20-06-04 12:37)
 ___
 
 Archive:
