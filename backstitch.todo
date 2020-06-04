@@ -1,14 +1,13 @@
 # Backstitch TODO
 
-☐ fix: `src/common/` @created(20-06-04 12:53)
-
 Hygen:
-    ☐ Hygen UI component setup @created(20-02-25 17:08)
-    ☐ Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08)
+    ✔ fix: `src/common/` @created(20-06-04 12:53) @done(20-06-04 20:10)
+    ✔ Hygen UI component setup @created(20-02-25 17:08) @done(20-06-04 20:10)
+    x Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08)
         (hygen docs)[https://www.hygen.io/quick-start]
-        ☐ Setup Hygen for React apps
-        ☐ components
-    ☐ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18)
+    ✔ Setup Hygen for React apps @done(20-06-04 20:10)
+    ☐ components
+    ✔ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18) @done(20-06-04 19:45)
 
     ☐ Add yarn scripts to `package.json` @created(20-06-04 19:08)
 
@@ -21,7 +20,8 @@ Hygen:
 
 Import each element:
     x File structure based on https://material-ui.com/ @created(20-03-24 13:10)
-    ☐ download material-ui git setup @created(20-03-24 13:13)
+    ✔ download material-ui @created(20-03-24 13:13) @done(20-06-04 20:13)
+    ☐ git setup @created(20-03-24 13:13)
 
 ☐ Does this link works on github for common vs common-ui Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
 
