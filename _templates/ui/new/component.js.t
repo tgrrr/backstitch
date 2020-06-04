@@ -3,6 +3,7 @@ to: src/common/ui/<%= name %>/<%= name %>.tsx
 ---
 <% const comp = h.inflection.undasherize(name) -%>
 import * as React from 'react';
+import <%= name %>Styled from './<%= name %>Styled';
 import { <%= name %> as Material<%= name %> } from '@material-ui/core';
 
 interface Props {
@@ -24,21 +25,25 @@ class <%= name %> extends React.PureComponent<Props, State> {
 
     public render() {
         return (
-            <div className={[<%= comp %>, this.props.className].join(' ')} data-testid='<%= comp %>'>
-                <Material<%= name %> {...props}>
-                    {this.props.children}
-                </Material<%= name %>>
-            </div>
+            </<%= name %>Styled>
+                <div className={[<%= comp %>, this.props.className].join(' ')} data-testid='<%= comp %>'>
+                    <Material<%= name %> {...props}>
+                        {this.props.children}
+                    </Material<%= name %>>
+                </div>
+            </<%= name %>Styled>
         );
     }
 }
 <% } else { -%>
 const <%= name %>: React.FC<Props> = ({ children, className, ...props }) => (
-    <div className=[<%= comp %>, className].join(' ')} data-testid='<%= comp %>'>
-        <Material<%= name %> {...props}>
-            {children}
-        </Material<%= name %>>
-    </div>
+    <<%= name %>Styled>
+        <div className=[<%= comp %>, className].join(' ')} data-testid='<%= comp %>'>
+            <Material<%= name %> {...props}>
+                {children}
+            </Material<%= name %>>            
+        </div>
+    </<%= name %>Styled>
 );
 <% } -%>
 
