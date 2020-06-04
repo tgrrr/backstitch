@@ -7,6 +7,7 @@ import { <%= name %> as Material<%= name %> } from '@material-ui/core';
 
 interface Props {
     children?: React.ReactNode;
+    className?: string;
 }
 
 <% if(locals.stateful) { -%>
@@ -23,17 +24,21 @@ class <%= name %> extends React.PureComponent<Props, State> {
 
     public render() {
         return (
-            <Material<%= name %> {...props}>
-                {this.props.children}
-            </Material<%= name %>>
+            <div className={[<%= comp %>, this.props.className].join(' ')} data-testid='<%= comp %>'>
+                <Material<%= name %> {...props}>
+                    {this.props.children}
+                </Material<%= name %>>
+            </div>
         );
     }
 }
 <% } else { -%>
-const <%= name %>: React.FC<Props> = ({ children, ...props }) => (
-    <Material<%= name %> {...props}>
-        {children}
-    </Material<%= name %>>
+const <%= name %>: React.FC<Props> = ({ children, className, ...props }) => (
+    <div className=[<%= comp %>, className].join(' ')} data-testid='<%= comp %>'>
+        <Material<%= name %> {...props}>
+            {children}
+        </Material<%= name %>>
+    </div>
 );
 <% } -%>
 
