@@ -11,7 +11,7 @@ It's nothing new to developers, but here's a project to quickly bootstrap your p
 ## Features
 
 ✔ Quicker app setup inside whichever starter you want (CRA, Next, etc)
-✔ Easily plug and play with [Material UI]
+✔ Easily plug and play with [Material UI] (currently v4.10.1)
     ☐ (Bootstrap and more to come! Contributions welcome)
 ✔ Quick Templating with Hygen
 ✔ Simpler unit testing
