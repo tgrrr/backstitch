@@ -26,7 +26,7 @@ class <%= name %> extends React.PureComponent<Props, State> {
     public render() {
         return (
             </<%= name %>Styled>
-                <div className={[<%= comp %>, this.props.className].join(' ')} data-testid='<%= comp %>'>
+                <div className={['<%= comp %>', this.props.className].join(' ')} data-testid='<%= comp %>'>
                     <Material<%= name %> {...props}>
                         {this.props.children}
                     </Material<%= name %>>
@@ -38,7 +38,7 @@ class <%= name %> extends React.PureComponent<Props, State> {
 <% } else { -%>
 const <%= name %>: React.FC<Props> = ({ children, className, ...props }) => (
     <<%= name %>Styled>
-        <div className=[<%= comp %>, className].join(' ')} data-testid='<%= comp %>'>
+        <div className={['<%= comp %>', {className}].join(' ')} data-testid='<%= comp %>'>
             <Material<%= name %> {...props}>
                 {children}
             </Material<%= name %>>            
