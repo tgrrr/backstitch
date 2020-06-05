@@ -30,14 +30,9 @@ Stories that break:
     ExpansionPanel
     Fade
     FormControlLabel - control is undefined
-    Grow children.props is undefined
-    Modal - props.children.props is undefined
-    Select child.props is undefined
     Slide
     Stepper - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-    Tooltips - children.props is undefined
     TrapFocus - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-    Zoom children.props is undefined
 
 Check the render method of `Unstable_TrapFocus`.
 

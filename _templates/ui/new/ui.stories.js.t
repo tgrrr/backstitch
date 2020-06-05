@@ -12,6 +12,8 @@ import { <%= name %> } from './index';
 
 storiesOf('<%= name %>', module).add('Default', () => (
     <<%= name %> className='myClass'>
-        <%= name %>
+        <>
+            <%= name %>
+        </>
     </<%= name %>>
 ));
