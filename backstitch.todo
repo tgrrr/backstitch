@@ -1,23 +1,14 @@
 # Backstitch TODO
 
 ✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
-Hygen:
-    ✔ fix: `src/common/` @created(20-06-04 12:53) @done(20-06-04 20:10)
-    ✔ Hygen UI component setup @created(20-02-25 17:08) @done(20-06-04 20:10)
-    x Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08)
-        (hygen docs)[https://www.hygen.io/quick-start]
-    ✔ Setup Hygen for React apps @done(20-06-04 20:10)
-    ☐ components
-    ✔ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18) @done(20-06-04 19:45)
 
-    ☐ Add yarn scripts to `package.json` @created(20-06-04 19:08)
-
-        ```json
-        "scripts": {
-            "hygen": "HYGEN_TMPLS=src/common-ui/_templates hygen",
-        },
-        ```
-    ☐ Stories @created(20-06-04 19:08)
+Storybook:
+    ✔ Storybook scripts bug @created(20-06-05 11:19) @done(20-06-05 13:06)
+    ✔ wrap child component in storybook @created(20-06-05 13:06) @done(20-06-05 13:45)
+    ✔ Storybook build @created(20-06-05 11:23) @done(20-06-05 13:45)
+    ✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:18)
+    ☐ Publish storybook @created(20-06-05 11:24)
+        ☐ Storybook link in Readme @created(20-06-05 11:24)
 
 Import each element:
     x File structure based on https://material-ui.com/ @created(20-03-24 13:10)
@@ -29,11 +20,18 @@ Import each element:
 Docs: 
     ☐ Adapter pattern @created(20-05-27 20:10)
     ☐ Howto @created(20-02-25 15:03)
+    ☐ Storybook test locally `npx http-server .out` @created(20-06-05 11:23)
     ☐ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01)
     ☐ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47)
 
 Later:
     ☐ CRA template + typescript @created(20-05-27 19:08)
+    Storybook:
+        ☐ command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
+        [Storybook addons](https://storybook.js.org/addons/) @created(20-06-05 11:22)
+            viewport
+            source
+            docs
     pages:
         ☐ add containers @created(20-06-04 12:37)
         index file in templates should just point to container
@@ -44,7 +42,33 @@ Later:
 ___
 
 Archive:
+  ✔ fix: `src/common/` @created(20-06-04 12:53) @done(20-06-04 20:10) @project(Hygen)
+  ✔ Hygen UI component setup @created(20-02-25 17:08) @done(20-06-04 20:10) @project(Hygen)
+  ✔ Setup Hygen for React apps @done(20-06-04 20:10) @project(Hygen)
+  ✔ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18) @done(20-06-04 19:45) @project(Hygen)
+  x Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08) @project(Hygen)
+    (hygen docs)[https://www.hygen.io/quick-start]
+  x File structure based on https://material-ui.com/ @created(20-03-24 13:10) @project(Import each element)
+  ✔ download material-ui @created(20-03-24 13:13) @done(20-06-04 20:13) @project(Import each element)
   ✔ rename to backstitch @created(20-05-27 19:08) @done(20-05-27 20:09)
   ✔ link to this todo @created(20-02-25 14:52) @done(20-02-25 17:00)
   ✔ add hygen to package.json @created(20-02-25 16:59) @done(20-02-25 16:59)
   ✔ hygen cra: @created(20-02-25 17:01) @done(20-02-25 17:02)
+✔ Add yarn scripts to `package.json` @created(20-06-04 19:08) @done(20-06-05 11:20)
+
+    ```json
+    "scripts": {
+        "hygen": "HYGEN_TMPLS=src/common-ui/_templates hygen",
+    },
+    ```
+✔ Stories @created(20-06-04 19:08) @done(20-06-05 11:20)
+
+<!-- TODO:
+
+Bash script
+
+export { colors };
+export * from './styles';
+
+export * from './utils';
+ -->

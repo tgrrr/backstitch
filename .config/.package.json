@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "hygen:component": "HYGEN_TMPLS=src/common-ui/_templates hygen",
     "hygen:ui": "HYGEN_TMPLS=src/common-ui/_templates hygen"
-    "storybook": "storybook",
+    "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -c .storybook -o .out"
   },
   "eslintConfig": {

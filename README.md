@@ -10,6 +10,7 @@ A simple wrapper pattern for react frameworks, including [Material UI]
 ☐ (Bootstrap and more to come! Contributions welcome)
 ☐ Quick Templating with Hygen
 ☐ TypeScript
+✔ StoryBook
 
 ## Getting Starteed
 
@@ -32,21 +33,27 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 
 ## How to contribute
 
-Here's the current [todo list](./src/common/backstitch.todo)
+### 4. Setup Storybook
 
-### Use [Semantic commit messages]
+## [Storybook](https://storybook.js.org/docs/guides/guide-react/)
 
-**Eg.**
+[Install Storybook](https://storybook.js.org/docs/guides/guide-react/) to your project
 
-`chore`: add Oyster build script
-`docs`: explain hat wobble
-`feat`: add beta sequence
-`fix`: remove broken confirmation message
-`refactor`: share logic between 4d3d3d3 and flarhgunnstow
-`style`: convert tabs to spaces
-`test`: ensure Tayne retains clothing
+add the following scripts to your `package.json`:
 
-## Templating setup
+```zsh
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out",
+```
+
+then:
+
+```zsh
+yarn run storybook
+```
+
+View your stories at [http://localhost:9009](http://localhost:9009)
+
 
 We're using [Hygen](https://www.hygen.io/quick-start) to template quickly
 
