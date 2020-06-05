@@ -10,31 +10,77 @@ Storybook:
     ☐ Publish storybook @created(20-06-05 11:24)
         ☐ Storybook link in Readme @created(20-06-05 11:24)
 
+☐ omit props @created(20-06-04 23:29)
+✔ name prop @created(20-06-05 12:48) @done(20-06-05 15:33)
+
+Git:
+    ☐ exact copy of git branch @created(20-06-05 11:15)
+    ✔ squash and merge/rebase @created(20-06-05 11:15) @done(20-06-05 15:39)
+    ✔ AppBar camelcase naming in script @created(20-06-05 11:32) @done(20-06-05 15:39)
+    ☐ material v4.10.1 tag git @created(20-06-05 12:31) @created(20-06-05 15:40)
+
 Import each element:
-    x File structure based on https://material-ui.com/ @created(20-03-24 13:10)
-    ✔ download material-ui @created(20-03-24 13:13) @done(20-06-04 20:13)
     ☐ git setup @created(20-03-24 13:13)
 
-☐ Does this link works on github for common vs common-ui Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
+☐ Does this link works on github for common vs common-ui: Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
 
 Docs: 
-    ☐ Adapter pattern @created(20-05-27 20:10)
-    ☐ Howto @created(20-02-25 15:03)
-    ☐ Storybook test locally `npx http-server .out` @created(20-06-05 11:23)
-    ☐ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01)
-    ☐ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47)
+    ✔ Why is it called backstitch (to do with material) @created(20-06-05 12:51) @done(20-06-05 15:39)
+        ✔ Adapter pattern @created(20-05-27 20:10) @done(20-06-05 15:39)
+        ✔ Component wrappers @created(20-06-05 12:51) @done(20-06-05 15:39)
+    ✔ Material-ui version v4.10.1 @done(20-06-05 15:41)
+    ✔ Howto:
+        ✔ create new component @created(20-06-05 15:39) @done(20-06-05 15:39)
+        ✔ run shell script @created(20-06-05 15:39) @done(20-06-05 15:39)
+    ✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:39)
+    ☐ link to .package.json @created(20-06-05 15:27)
+    
+    ✔ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01) @done(20-06-05 15:41)
+    ✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41)
 
 Later:
-    ☐ CRA template + typescript @created(20-05-27 19:08)
+    Hygen:
+        components @created(20-06-05 12:50)
+        custom folder location:
+            actionfolder for custom folder https://www.hygen.io/templates
+                ```
+                <% if(locals.message){ -%>
+                    message: <%= message %>
+                <% } -%>
+                ```
+
+        unless_exists: true https://www.hygen.io/templates
+        list available props per component @created(20-06-04 23:29)
+        global variables eg. `variant: 'outlined'` @created(20-06-05 12:50)
+        use-effect, state, containers, redux elements @created(20-06-05 12:50)
+        More tests with either https://reactjs.org/docs/test-renderer.html or https://testing-library.com/docs/react-testing-library/example-intro @created(20-06-05 11:26)
+        install dependencies:
+            ```
+            Here's a common task: add a dependency and then run yarn install.
+            ---
+            inject: true
+            to: package.json
+            after: dependencies
+            skip_if: lodash
+            sh: cd <%= cwd %> && yarn install
+            ---
+            "lodash":"*",
+            ```
+
+
     Storybook:
         ☐ command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
         [Storybook addons](https://storybook.js.org/addons/) @created(20-06-05 11:22)
             viewport
             source
             docs
+    CRA template + typescript @created(20-05-27 19:08)
+    Analyse most used material-ui components and props with github graphql api
+    snippets in vscode, atom, sublime-text
+
     pages:
         ☐ add containers @created(20-06-04 12:37)
-        index file in templates should just point to container
+        ☐ index file points to container @created(20-06-05 11:22)
 
     Cypress:
         ☐ Can I run cypress tests that are throughout the project? @created(20-06-04 12:53)
