@@ -1,5 +1,50 @@
 # Backstitch TODO
 
+☐ Bootstrap @created(20-06-05 15:54)
+☐ Formik @created(20-06-05 15:54)
+☐ Complex component demos @created(20-06-05 15:54)
+
+Stories currently don't render anything:
+    BottomNav
+    BottomNavAction
+    Breadcrumbs
+    ButtonGroup
+    CardHeader
+    Dialogue
+    Drawer
+    InputBase
+    Menu
+    Popper
+    Snackbar
+    Snackbarcontent
+    StepContent
+    StepIcon
+    SVG Icon
+    swipable drawer
+    tab
+
+Stories that break:
+    Clickawaylistener
+    Collapse
+    Divider - hr is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+    ExpansionPanel
+    Fade
+    FormControlLabel - control is undefined
+    Grow children.props is undefined
+    Modal - props.children.props is undefined
+    Select child.props is undefined
+    Slide
+    Stepper - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    Tooltips - children.props is undefined
+    TrapFocus - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    Zoom children.props is undefined
+
+Check the render method of `Unstable_TrapFocus`.
+
+    
+
+
+
 ✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
 
 Storybook:
@@ -10,7 +55,6 @@ Storybook:
     ☐ Publish storybook @created(20-06-05 11:24)
         ☐ Storybook link in Readme @created(20-06-05 11:24)
 
-☐ omit props @created(20-06-04 23:29)
 ✔ name prop @created(20-06-05 12:48) @done(20-06-05 15:33)
 
 Git:
@@ -39,6 +83,38 @@ Docs:
     ✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41)
 
 Later:
+    Typescript:
+        ☐ Omit props @created(20-06-04 23:29)
+        ☐ rename `Props` @created(20-06-05 16:24)
+        import { <%= name %> as Material<%= name %>, <%= name %>Props as Material<%= name %>Props } from '@material-ui/core';
+
+        export interface Props 
+            // extends <%= name %>Props,
+            // useful if you just want to disable 1 or 2 particular props
+            // Omit<
+            //   MaterialCheckboxProps,
+            //   | 'name'
+            //   | 'value'
+            // > {
+            name: string;
+            children?: React.ReactNode;
+            className?: string;
+        }
+
+        docs:
+            `/// <reference types="@types/material-ui" />`
+            ```
+            {
+            "compilerOptions": {
+            +    "types": ["material-ui"]
+            }
+            }
+            ```
+            https://github.com/mui-org/material-ui/issues/7853
+            see: https://material-ui.com/guides/typescript/
+            material-ui component types: https://github.com/DefinitelyTyped/DefinitelyTyped/types/material-ui/index.d.ts
+            
+
     Hygen:
         components @created(20-06-05 12:50)
         custom folder location:
