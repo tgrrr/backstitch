@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.10.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0",
+    "styled-components": "^5.1.1"
+},
+  "devDependencies": {
+    "@storybook/addon-actions": "*",
+    "@storybook/addon-links": "*",
+    "@storybook/addons": "*",
+    "@storybook/preset-create-react-app": "*",
+    "@storybook/react": "*",
     "@testing-library/jest-dom": "*",
     "@testing-library/react": "*",
     "@testing-library/user-event": "*",
@@ -10,22 +22,13 @@
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "typescript": "*"
-  },
-  "devDependencies": {
-    "babel-loader": "8.0.6",    
-    "@storybook/addon-actions": "*",
-    "@storybook/addon-links": "*",
-    "@storybook/addons": "*",
-    "@storybook/preset-create-react-app": "*",
-    "@storybook/react": "*",
+    "@types/react-test-renderer": "*",        
+    "@types/styled-components": "^5.1.0",
+    "babel-loader": "8.0.6",
     "hygen": "*",
-    "hygen-cra": "*",
-    "react-test-renderer": "*"
-  },
+    "react-test-renderer": "*",
+    "typescript": "*"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -9,6 +9,9 @@ import { storiesOf } from '@storybook/react';
 
 import { <%= name %> } from './index';
 
+export default {
+    title: 'Material <%= name %>',
+};
 
 storiesOf('<%= name %>', module).add('Default', () => (
     <<%= name %>
