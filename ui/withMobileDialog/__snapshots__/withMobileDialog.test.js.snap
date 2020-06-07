@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`withMobileDialog: default 1`] = `
-<withMobileDialog>
-  withMobileDialog
-</withMobileDialog>
-`;
