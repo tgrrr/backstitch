@@ -3,16 +3,14 @@ import FormControlLabelStyled from './FormControlLabelStyled';
 import { FormControlLabel as MaterialFormControlLabel } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    control: React.ReactElement<any, any>;
     className?: string;
 }
 
-const FormControlLabel: React.FC<Props> = ({ children, className, ...rest }) => (
+const FormControlLabel: React.FC<Props> = ({ className, ...rest }) => (
     <FormControlLabelStyled>
         <div className={['Formcontrollabel', className && className].join(' ')} data-testid='Formcontrollabel'>
-            <MaterialFormControlLabel {...rest}>
-                {children}
-            </MaterialFormControlLabel>            
+            <MaterialFormControlLabel {...rest} />           
         </div>
     </FormControlLabelStyled>
 );

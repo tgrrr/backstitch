@@ -3,7 +3,7 @@ import ZoomStyled from './ZoomStyled';
 import { Zoom as MaterialZoom } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    children?: React.ReactElement<any, any>;
     className?: string;
 }
 

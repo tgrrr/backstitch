@@ -3,7 +3,7 @@ import ExpansionPanelStyled from './ExpansionPanelStyled';
 import { ExpansionPanel as MaterialExpansionPanel } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    children: Exclude<React.ReactNode, null | undefined>;
     className?: string;
 }
 

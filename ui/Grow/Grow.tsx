@@ -3,7 +3,7 @@ import GrowStyled from './GrowStyled';
 import { Grow as MaterialGrow } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    children?: React.ReactElement<any, any>;
     className?: string;
 }
 
