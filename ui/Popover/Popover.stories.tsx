@@ -13,6 +13,7 @@ export default {
 storiesOf('Popover', module).add('Default', () => (
     <Popover
         className='myClass'
+        open={true}
     >
         <>
             Popover

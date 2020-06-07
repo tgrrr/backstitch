@@ -5,12 +5,21 @@ import { Popper as MaterialPopper } from '@material-ui/core';
 interface Props {
     children?: React.ReactNode;
     className?: string;
+    open: boolean;
 }
 
-const Popper: React.FC<Props> = ({ children, className, ...rest }) => (
+const Popper: React.FC<Props> = ({
+    children,
+    className,
+    open = false,
+    ...rest
+}) => (
     <PopperStyled>
         <div className={['Popper', className && className].join(' ')} data-testid='Popper'>
-            <MaterialPopper {...rest}>
+            <MaterialPopper
+                open={open}
+                {...rest}
+            >
                 {children}
             </MaterialPopper>            
         </div>

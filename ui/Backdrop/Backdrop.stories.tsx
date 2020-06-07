@@ -13,6 +13,7 @@ export default {
 storiesOf('Backdrop', module).add('Default', () => (
     <Backdrop
         className='myClass'
+        open={true}
     >
         <>
             Backdrop

@@ -13,6 +13,7 @@ export default {
 storiesOf('Popper', module).add('Default', () => (
     <Popper
         className='myClass'
+        open={true}
     >
         <>
             Popper

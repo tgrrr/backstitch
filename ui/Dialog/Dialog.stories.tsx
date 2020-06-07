@@ -13,6 +13,7 @@ export default {
 storiesOf('Dialog', module).add('Default', () => (
     <Dialog
         className='myClass'
+        open={true}
     >
         <>
             Dialog

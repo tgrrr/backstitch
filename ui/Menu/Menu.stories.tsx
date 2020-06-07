@@ -13,6 +13,7 @@ export default {
 storiesOf('Menu', module).add('Default', () => (
     <Menu
         className='myClass'
+        open={true}
     >
         <>
             Menu
