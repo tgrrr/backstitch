@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomNavigation: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Bottomnavigation "
+    data-testid="Bottomnavigation"
+  >
+    <div
+      className="MuiBottomNavigation-root"
+    >
+      BottomNavigation
+    </div>
+  </div>
+</div>
+`;

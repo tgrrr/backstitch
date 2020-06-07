@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogActions: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Dialogactions "
+    data-testid="Dialogactions"
+  >
+    <div
+      className="MuiDialogActions-root MuiDialogActions-spacing"
+    >
+      DialogActions
+    </div>
+  </div>
+</div>
+`;

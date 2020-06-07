@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuList: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Menulist "
+    data-testid="Menulist"
+  >
+    <ul
+      className="MuiList-root MuiList-padding"
+      onKeyDown={[Function]}
+      role="menu"
+      tabIndex={-1}
+    >
+      MenuList
+    </ul>
+  </div>
+</div>
+`;

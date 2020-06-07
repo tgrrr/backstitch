@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Box "
+    data-testid="Box"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-1"
+    >
+      Box
+    </div>
+  </div>
+</div>
+`;

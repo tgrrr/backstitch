@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CssBaseline: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Cssbaseline "
+    data-testid="Cssbaseline"
+  >
+    CssBaseline
+  </div>
+</div>
+`;

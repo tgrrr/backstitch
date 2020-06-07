@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputAdornment: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Inputadornment "
+    data-testid="Inputadornment"
+  >
+    <div
+      className="MuiInputAdornment-root"
+    >
+      InputAdornment
+    </div>
+  </div>
+</div>
+`;

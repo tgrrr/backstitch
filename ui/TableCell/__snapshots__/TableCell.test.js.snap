@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableCell: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Tablecell "
+    data-testid="Tablecell"
+  >
+    <td
+      aria-sort={null}
+      className="MuiTableCell-root"
+    >
+      TableCell
+    </td>
+  </div>
+</div>
+`;

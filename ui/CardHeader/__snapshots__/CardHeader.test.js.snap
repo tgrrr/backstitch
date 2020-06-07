@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardHeader: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Cardheader "
+    data-testid="Cardheader"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content"
+      />
+    </div>
+  </div>
+</div>
+`;

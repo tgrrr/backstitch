@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilledInput: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Filledinput "
+    data-testid="Filledinput"
+  >
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline"
+      onClick={[Function]}
+    >
+      <input
+        className="MuiInputBase-input MuiFilledInput-input"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;

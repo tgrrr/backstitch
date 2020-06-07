@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Divider "
+    data-testid="Divider"
+  >
+    <hr
+      className="MuiDivider-root"
+    >
+      Divider
+    </hr>
+  </div>
+</div>
+`;

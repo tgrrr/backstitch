@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snackbar: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Snackbar "
+    data-testid="Snackbar"
+  />
+</div>
+`;

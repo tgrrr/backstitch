@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Chip "
+    data-testid="Chip"
+  >
+    <div
+      className="MuiChip-root"
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+    >
+      <span
+        className="MuiChip-label"
+      />
+    </div>
+  </div>
+</div>
+`;

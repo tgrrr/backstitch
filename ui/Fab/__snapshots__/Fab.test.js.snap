@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fab: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Fab "
+    data-testid="Fab"
+  >
+    <button
+      className="MuiButtonBase-root MuiFab-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiFab-label"
+      >
+        Fab
+      </span>
+    </button>
+  </div>
+</div>
+`;

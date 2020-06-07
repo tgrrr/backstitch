@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormGroup: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Formgroup "
+    data-testid="Formgroup"
+  >
+    <div
+      className="MuiFormGroup-root"
+    >
+      FormGroup
+    </div>
+  </div>
+</div>
+`;

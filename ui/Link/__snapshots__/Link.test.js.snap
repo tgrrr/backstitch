@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Link "
+    data-testid="Link"
+  >
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;

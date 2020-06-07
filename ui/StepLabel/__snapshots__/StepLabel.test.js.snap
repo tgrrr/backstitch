@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepLabel: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Steplabel "
+    data-testid="Steplabel"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal"
+    >
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          StepLabel
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContent: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Cardcontent "
+    data-testid="Cardcontent"
+  >
+    <div
+      className="MuiCardContent-root"
+    >
+      CardContent
+    </div>
+  </div>
+</div>
+`;

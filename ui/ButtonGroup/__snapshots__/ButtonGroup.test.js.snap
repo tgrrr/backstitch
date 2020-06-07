@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Buttongroup "
+    data-testid="Buttongroup"
+  >
+    <div
+      className="MuiButtonGroup-root"
+      role="group"
+    >
+      ButtonGroup
+    </div>
+  </div>
+</div>
+`;

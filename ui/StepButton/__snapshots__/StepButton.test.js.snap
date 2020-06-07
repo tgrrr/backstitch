@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepButton: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Stepbutton "
+    data-testid="Stepbutton"
+  >
+    <button
+      className="MuiButtonBase-root MuiStepButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            StepButton
+          </span>
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;

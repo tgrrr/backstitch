@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Container "
+    data-testid="Container"
+  >
+    <div
+      className="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      Container
+    </div>
+  </div>
+</div>
+`;

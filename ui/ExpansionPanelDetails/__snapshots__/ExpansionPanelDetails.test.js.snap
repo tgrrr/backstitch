@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpansionPanelDetails: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Expansionpaneldetails "
+    data-testid="Expansionpaneldetails"
+  >
+    <div
+      className="MuiExpansionPanelDetails-root"
+    >
+      ExpansionPanelDetails
+    </div>
+  </div>
+</div>
+`;

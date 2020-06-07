@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backdrop: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Backdrop "
+    data-testid="Backdrop"
+  >
+    <div
+      aria-hidden={true}
+      className="MuiBackdrop-root"
+      style={
+        Object {
+          "opacity": 0,
+          "visibility": "hidden",
+        }
+      }
+    >
+      Backdrop
+    </div>
+  </div>
+</div>
+`;

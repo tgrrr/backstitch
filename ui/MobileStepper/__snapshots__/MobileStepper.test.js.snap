@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileStepper: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Mobilestepper "
+    data-testid="Mobilestepper"
+  >
+    <div
+      className="MuiPaper-root MuiMobileStepper-root MuiMobileStepper-positionBottom MuiPaper-elevation0"
+    >
+      <div
+        className="MuiMobileStepper-dots"
+      >
+        <div
+          className="MuiMobileStepper-dot MuiMobileStepper-dotActive"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

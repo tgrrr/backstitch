@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogTitle: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Dialogtitle "
+    data-testid="Dialogtitle"
+  >
+    <div
+      className="MuiDialogTitle-root"
+    >
+      <h2
+        className="MuiTypography-root MuiTypography-h6"
+      >
+        DialogTitle
+      </h2>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zoom: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Zoom "
+    data-testid="Zoom"
+  >
+    Zoom
+  </div>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemAvatar: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Listitemavatar "
+    data-testid="Listitemavatar"
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      ListItemAvatar
+    </div>
+  </div>
+</div>
+`;

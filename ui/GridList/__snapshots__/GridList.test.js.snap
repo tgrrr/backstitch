@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridList: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Gridlist "
+    data-testid="Gridlist"
+  >
+    <ul
+      className="MuiGridList-root"
+      style={
+        Object {
+          "margin": -2,
+        }
+      }
+    >
+      GridList
+    </ul>
+  </div>
+</div>
+`;

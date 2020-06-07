@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Listitem "
+    data-testid="Listitem"
+  >
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      ListItem
+    </li>
+  </div>
+</div>
+`;

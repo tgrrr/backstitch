@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fade: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Fade "
+    data-testid="Fade"
+  >
+    Fade
+  </div>
+</div>
+`;

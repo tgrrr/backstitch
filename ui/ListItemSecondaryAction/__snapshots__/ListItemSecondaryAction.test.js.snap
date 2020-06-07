@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemSecondaryAction: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Listitemsecondaryaction "
+    data-testid="Listitemsecondaryaction"
+  >
+    <div
+      className="MuiListItemSecondaryAction-root"
+    >
+      ListItemSecondaryAction
+    </div>
+  </div>
+</div>
+`;

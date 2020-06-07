@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogContentText: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Dialogcontenttext "
+    data-testid="Dialogcontenttext"
+  >
+    <p
+      className="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+    >
+      DialogContentText
+    </p>
+  </div>
+</div>
+`;

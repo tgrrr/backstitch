@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepConnector: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Stepconnector "
+    data-testid="Stepconnector"
+  >
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridListTileBar: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Gridlisttilebar "
+    data-testid="Gridlisttilebar"
+  >
+    <div
+      className="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"
+    >
+      <div
+        className="MuiGridListTileBar-titleWrap"
+      >
+        <div
+          className="MuiGridListTileBar-title"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

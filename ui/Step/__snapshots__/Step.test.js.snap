@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Step "
+    data-testid="Step"
+  >
+    <div
+      className="MuiStep-root"
+    >
+      Step
+    </div>
+  </div>
+</div>
+`;

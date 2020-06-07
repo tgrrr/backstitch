@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClickAwayListener: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Clickawaylistener "
+    data-testid="Clickawaylistener"
+  >
+    ClickAwayListener
+  </div>
+</div>
+`;

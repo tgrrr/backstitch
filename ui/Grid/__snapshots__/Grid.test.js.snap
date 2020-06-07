@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Grid "
+    data-testid="Grid"
+  >
+    <div
+      className="MuiGrid-root"
+    >
+      Grid
+    </div>
+  </div>
+</div>
+`;

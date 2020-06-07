@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormHelperText: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Formhelpertext "
+    data-testid="Formhelpertext"
+  >
+    <p
+      className="MuiFormHelperText-root"
+    >
+      FormHelperText
+    </p>
+  </div>
+</div>
+`;

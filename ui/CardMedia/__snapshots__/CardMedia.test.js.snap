@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardMedia: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Cardmedia "
+    data-testid="Cardmedia"
+  >
+    <div
+      className="MuiCardMedia-root"
+    >
+      CardMedia
+    </div>
+  </div>
+</div>
+`;

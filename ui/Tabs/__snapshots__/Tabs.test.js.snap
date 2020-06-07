@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Tabs "
+    data-testid="Tabs"
+  >
+    <div
+      className="MuiTabs-root"
+    >
+      <div
+        className="MuiTabs-scroller MuiTabs-fixed"
+        onScroll={[Function]}
+        style={
+          Object {
+            "marginBottom": null,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="MuiTabs-flexContainer"
+          onKeyDown={[Function]}
+          role="tablist"
+        >
+          Tabs
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

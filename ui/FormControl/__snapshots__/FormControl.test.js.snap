@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormControl: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Formcontrol "
+    data-testid="Formcontrol"
+  >
+    <div
+      className="MuiFormControl-root"
+    >
+      FormControl
+    </div>
+  </div>
+</div>
+`;

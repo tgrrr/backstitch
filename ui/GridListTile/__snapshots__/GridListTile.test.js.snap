@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridListTile: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Gridlisttile "
+    data-testid="Gridlisttile"
+  >
+    <li
+      className="MuiGridListTile-root"
+    >
+      <div
+        className="MuiGridListTile-tile"
+      >
+        GridListTile
+      </div>
+    </li>
+  </div>
+</div>
+`;

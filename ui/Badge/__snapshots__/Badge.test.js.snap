@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Badge "
+    data-testid="Badge"
+  >
+    <span
+      className="MuiBadge-root"
+    >
+      Badge
+      <span
+        className="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-invisible"
+      />
+    </span>
+  </div>
+</div>
+`;

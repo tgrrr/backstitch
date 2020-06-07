@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Breadcrumbs "
+    data-testid="Breadcrumbs"
+  >
+    <nav
+      className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+    >
+      <ol
+        className="MuiBreadcrumbs-ol"
+      >
+        <li
+          className="MuiBreadcrumbs-li"
+        >
+          Breadcrumbs
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Table "
+    data-testid="Table"
+  >
+    <table
+      className="MuiTable-root"
+      role={null}
+    >
+      Table
+    </table>
+  </div>
+</div>
+`;

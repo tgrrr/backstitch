@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Stepper "
+    data-testid="Stepper"
+  >
+    <div
+      className="MuiPaper-root MuiStepper-root MuiStepper-horizontal MuiPaper-elevation0"
+    >
+      Stepper
+    </div>
+  </div>
+</div>
+`;

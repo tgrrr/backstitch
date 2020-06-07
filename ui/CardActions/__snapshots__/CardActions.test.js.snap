@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardActions: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Cardactions "
+    data-testid="Cardactions"
+  >
+    <div
+      className="MuiCardActions-root MuiCardActions-spacing"
+    >
+      CardActions
+    </div>
+  </div>
+</div>
+`;

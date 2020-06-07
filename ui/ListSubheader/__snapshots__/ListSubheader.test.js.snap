@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListSubheader: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Listsubheader "
+    data-testid="Listsubheader"
+  >
+    <li
+      className="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters"
+    >
+      ListSubheader
+    </li>
+  </div>
+</div>
+`;

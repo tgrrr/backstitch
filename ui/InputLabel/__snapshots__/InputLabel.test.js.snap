@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputLabel: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Inputlabel "
+    data-testid="Inputlabel"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated"
+    >
+      InputLabel
+    </label>
+  </div>
+</div>
+`;

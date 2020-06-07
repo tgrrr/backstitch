@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SvgIcon: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Svgicon "
+    data-testid="Svgicon"
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      SvgIcon
+    </svg>
+  </div>
+</div>
+`;

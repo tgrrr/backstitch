@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Radiogroup "
+    data-testid="Radiogroup"
+  >
+    <div
+      className="MuiFormGroup-root"
+      role="radiogroup"
+    >
+      RadioGroup
+    </div>
+  </div>
+</div>
+`;

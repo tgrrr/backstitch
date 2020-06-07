@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Appbar "
+    data-testid="Appbar"
+  >
+    <header
+      className="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+    >
+      AppBar
+    </header>
+  </div>
+</div>
+`;

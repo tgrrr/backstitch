@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemIcon: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Listitemicon "
+    data-testid="Listitemicon"
+  >
+    <div
+      className="MuiListItemIcon-root"
+    >
+      ListItemIcon
+    </div>
+  </div>
+</div>
+`;

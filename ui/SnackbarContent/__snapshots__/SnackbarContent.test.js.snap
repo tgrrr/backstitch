@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SnackbarContent: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Snackbarcontent "
+    data-testid="Snackbarcontent"
+  >
+    <div
+      className="MuiPaper-root MuiSnackbarContent-root MuiPaper-elevation6"
+      role="alert"
+    >
+      <div
+        className="MuiSnackbarContent-message"
+      />
+    </div>
+  </div>
+</div>
+`;

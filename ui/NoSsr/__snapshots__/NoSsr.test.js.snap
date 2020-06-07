@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoSsr: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Nossr "
+    data-testid="Nossr"
+  />
+</div>
+`;

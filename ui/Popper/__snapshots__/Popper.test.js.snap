@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popper: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Popper "
+    data-testid="Popper"
+  />
+</div>
+`;

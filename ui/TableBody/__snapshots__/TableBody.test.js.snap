@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableBody: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Tablebody "
+    data-testid="Tablebody"
+  >
+    <tbody
+      className="MuiTableBody-root"
+      role={null}
+    >
+      TableBody
+    </tbody>
+  </div>
+</div>
+`;

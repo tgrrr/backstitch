@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grow: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Grow "
+    data-testid="Grow"
+  >
+    Grow
+  </div>
+</div>
+`;

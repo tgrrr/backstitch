@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Avatar "
+    data-testid="Avatar"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+    >
+      Avatar
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Collapse "
+    data-testid="Collapse"
+  >
+    <div
+      className="MuiCollapse-container MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          Collapse
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

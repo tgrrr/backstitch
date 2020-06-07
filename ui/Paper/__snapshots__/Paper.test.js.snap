@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paper: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Paper "
+    data-testid="Paper"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      Paper
+    </div>
+  </div>
+</div>
+`;

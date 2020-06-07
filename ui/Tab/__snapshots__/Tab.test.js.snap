@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Tab "
+    data-testid="Tab"
+  >
+    <button
+      className="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="tab"
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="MuiTab-wrapper"
+      />
+    </button>
+  </div>
+</div>
+`;

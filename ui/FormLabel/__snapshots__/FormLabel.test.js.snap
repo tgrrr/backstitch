@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormLabel: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Formlabel "
+    data-testid="Formlabel"
+  >
+    <label
+      className="MuiFormLabel-root"
+    >
+      FormLabel
+    </label>
+  </div>
+</div>
+`;

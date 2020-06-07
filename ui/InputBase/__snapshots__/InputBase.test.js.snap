@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputBase: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Inputbase "
+    data-testid="Inputbase"
+  >
+    <div
+      className="MuiInputBase-root"
+      onClick={[Function]}
+    >
+      <input
+        className="MuiInputBase-input"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;
