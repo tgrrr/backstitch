@@ -1,44 +1,14 @@
 # Backstitch TODO
 
-☐ Bootstrap @created(20-06-05 15:54)
-☐ Formik @created(20-06-05 15:54)
-☐ Complex component demos @created(20-06-05 15:54)
+Components:
+    ☐ Complex component demos @created(20-06-05 15:54)
+    ☐ Bare component without library @created(20-06-07 23:36)
+    ☐ Bootstrap @created(20-06-05 15:54)
+    ☐ Formik @created(20-06-05 15:54)
 
-Stories currently don't render anything:
-    BottomNav
-    BottomNavAction
-    Breadcrumbs
-    ButtonGroup
-    CardHeader
-    Dialogue
-    Drawer
-    InputBase
-    Menu
-    Popper
-    Snackbar
-    Snackbarcontent
-    StepContent
-    StepIcon
-    SVG Icon
-    swipable drawer
-    tab
-
-Stories that break:
-    Clickawaylistener
-    Collapse
-    Divider - hr is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
-    ExpansionPanel
-    Fade
-    FormControlLabel - control is undefined
-    Slide
-    Stepper - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-    TrapFocus - Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-
-Check the render method of `Unstable_TrapFocus`.
-
-    
-
-
+Props:
+    ☐ name prop required on inputs @created(20-06-07 23:36)
+    ☐ aria-controls= @created(20-06-07 23:00)
 
 ✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
 
@@ -49,6 +19,8 @@ Storybook:
     ✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:18)
     ☐ Publish storybook @created(20-06-05 11:24)
         ☐ Storybook link in Readme @created(20-06-05 11:24)
+    ☐ Theme setup: https://medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866@created(20-06-07 20:25)
+
 
 ✔ name prop @created(20-06-05 12:48) @done(20-06-05 15:33)
 
@@ -78,6 +50,7 @@ Docs:
     ✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41)
 
 Later:
+    utils: myVar === undefined @created(20-06-07 21:16)
     Typescript:
         ☐ Omit props @created(20-06-04 23:29)
         ☐ rename `Props` @created(20-06-05 16:24)

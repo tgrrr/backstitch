@@ -16,7 +16,6 @@ export default {
 storiesOf('<%= name %>', module).add('Default', () => (
     <<%= name %>
         className='myClass'
-        name='myName'
     >
         <>
             <%= name %>

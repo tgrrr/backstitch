@@ -7,7 +7,6 @@ import <%= name %>Styled from './<%= name %>Styled';
 import { <%= name %> as Material<%= name %> } from '@material-ui/core';
 
 interface Props {
-    name: string;
     children?: React.ReactNode;
     className?: string;
 }
@@ -32,7 +31,7 @@ class <%= name %> extends React.PureComponent<Props, State> {
         return (
             <<%= name %>Styled>
                 <div className={['<%= comp %>', className && {className}].join(' ')} data-testid='<%= comp %>'>
-                    <Material<%= name %> name={name} {...rest}>
+                    <Material<%= name %> {...rest}>
                         {children}
                     </Material<%= name %>>
                 </div>
@@ -41,10 +40,10 @@ class <%= name %> extends React.PureComponent<Props, State> {
     }
 }
 <% } else { -%>
-const <%= name %>: React.FC<Props> = ({ children, className, name, ...rest }) => (
+const <%= name %>: React.FC<Props> = ({ children, className, ...rest }) => (
     <<%= name %>Styled>
         <div className={['<%= comp %>', className && className].join(' ')} data-testid='<%= comp %>'>
-            <Material<%= name %> name={name} {...rest}>
+            <Material<%= name %> {...rest}>
                 {children}
             </Material<%= name %>>            
         </div>
