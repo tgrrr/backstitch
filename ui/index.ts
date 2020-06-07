@@ -17,7 +17,7 @@ import CardActions from './CardActions/CardActions';
 import CardContent from './CardContent/CardContent';
 import CardHeader from './CardHeader/CardHeader';
 import CardMedia from './CardMedia/CardMedia';
-import Checkbox from './Checkbox/Checkbox';
+// import Checkbox from './Checkbox/Checkbox';
 import Chip from './Chip/Chip';
 import CircularProgress from './CircularProgress/CircularProgress';
 import ClickAwayListener from './ClickAwayListener/ClickAwayListener';
@@ -111,10 +111,6 @@ import TextareaAutosize from './TextareaAutosize/TextareaAutosize';
 import Toolbar from './Toolbar/Toolbar';
 import Tooltip from './Tooltip/Tooltip';
 import Typography from './Typography/Typography';
-import useMediaQuery from './useMediaQuery/useMediaQuery';
-import useScrollTrigger from './useScrollTrigger/useScrollTrigger';
-import withMobileDialog from './withMobileDialog/withMobileDialog';
-import withWidth from './withWidth/withWidth';
 import Zoom from './Zoom/Zoom';
 /* this code is directly from material-ui: https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/index.js */
 
@@ -136,7 +132,7 @@ export {
     CardContent,
     CardHeader,
     CardMedia,
-    Checkbox,
+    // Checkbox,
     Chip,
     CircularProgress,
     ClickAwayListener,
@@ -170,11 +166,13 @@ export {
     Hidden,
     Icon,
     IconButton,
+    Input,
     InputAdornment,
     InputBase,
     InputLabel,
     LinearProgress,
     Link,
+    List,
     ListItem,
     ListItemAvatar,
     ListItemIcon,
@@ -196,6 +194,7 @@ export {
     Radio,
     RadioGroup,
     RootRef,
+    Select,
     Slide,
     Slider,
     Snackbar,
@@ -206,6 +205,7 @@ export {
     StepContent,
     StepIcon,
     StepLabel,
+    Stepper,
     SvgIcon,
     SwipeableDrawer,
     Switch,
@@ -226,10 +226,6 @@ export {
     Toolbar,
     Tooltip,
     Typography,
-    useMediaQuery,
-    useScrollTrigger,
-    withMobileDialog,
-    withWidth,
     Zoom,
 };
 
