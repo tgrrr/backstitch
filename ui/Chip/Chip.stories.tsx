@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('Chip', module).add('Default', () => (
-    <Chip
-        className='myClass'
-    >
-        <>
-            Chip
-        </>
-    </Chip>
+    <Chip className='myClass' />
 ));

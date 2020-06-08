@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('GridListTileBar', module).add('Default', () => (
-    <GridListTileBar
-        className='myClass'
-    >
-        <>
-            GridListTileBar
-        </>
-    </GridListTileBar>
+    <GridListTileBar className='myClass' />
 ));

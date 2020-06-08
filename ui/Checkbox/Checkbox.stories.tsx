@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('Checkbox', module).add('Default', () => (
-    <Checkbox
-        className='myClass'
-    >
-        <>
-            Checkbox
-        </>
-    </Checkbox>
+    <Checkbox className='myClass' />
 ));

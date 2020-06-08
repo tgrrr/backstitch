@@ -4,11 +4,10 @@ import { TextareaAutosize } from '.'
 
 it('TextareaAutosize: default', () => {
     const component = renderer.create(
-        <TextareaAutosize>
-            <>
-                TextareaAutosize
-            </>
-        </TextareaAutosize>
+        <TextareaAutosize
+            placeholder='Minimum 3 rows'
+            rowsMin={3} 
+        />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

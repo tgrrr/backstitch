@@ -11,7 +11,13 @@ exports[`BottomNavigation: default 1`] = `
     <div
       className="MuiBottomNavigation-root"
     >
-      BottomNavigation
+      <span
+        selected={false}
+        showLabel={false}
+        value={0}
+      >
+        BottomNavigation
+      </span>
     </div>
   </div>
 </div>

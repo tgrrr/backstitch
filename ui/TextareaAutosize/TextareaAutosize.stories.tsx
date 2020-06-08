@@ -11,11 +11,6 @@ export default {
 };
 
 storiesOf('TextareaAutosize', module).add('Default', () => (
-    <TextareaAutosize
-        className='myClass'
-    >
-        <>
-            TextareaAutosize
-        </>
-    </TextareaAutosize>
+    <TextareaAutosize className='myClass' />
+
 ));

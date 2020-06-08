@@ -4,11 +4,7 @@ import { BottomNavigationAction } from '.'
 
 it('BottomNavigationAction: default', () => {
     const component = renderer.create(
-        <BottomNavigationAction>
-            <>
-                BottomNavigationAction
-            </>
-        </BottomNavigationAction>
+        <BottomNavigationAction />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

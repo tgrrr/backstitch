@@ -4,11 +4,7 @@ import { FilledInput } from '.'
 
 it('FilledInput: default', () => {
     const component = renderer.create(
-        <FilledInput>
-            <>
-                FilledInput
-            </>
-        </FilledInput>
+        <FilledInput />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

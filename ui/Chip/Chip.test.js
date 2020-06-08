@@ -4,11 +4,7 @@ import { Chip } from '.'
 
 it('Chip: default', () => {
     const component = renderer.create(
-        <Chip>
-            <>
-                Chip
-            </>
-        </Chip>
+        <Chip />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

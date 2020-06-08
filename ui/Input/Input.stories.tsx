@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('Input', module).add('Default', () => (
-    <Input
-        className='myClass'
-    >
-        <>
-            Input
-        </>
-    </Input>
+    <Input className='myClass' />
 ));

@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('CircularProgress', module).add('Default', () => (
-    <CircularProgress
-        className='myClass'
-    >
-        <>
-            CircularProgress
-        </>
-    </CircularProgress>
+    <CircularProgress className='myClass' />
 ));

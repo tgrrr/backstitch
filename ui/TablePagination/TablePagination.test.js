@@ -4,11 +4,7 @@ import { TablePagination } from '.'
 
 it('TablePagination: default', () => {
     const component = renderer.create(
-        <TablePagination>
-            <>
-                TablePagination
-            </>
-        </TablePagination>
+        <TablePagination />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

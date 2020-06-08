@@ -4,11 +4,7 @@ import { GridListTileBar } from '.'
 
 it('GridListTileBar: default', () => {
     const component = renderer.create(
-        <GridListTileBar>
-            <>
-                GridListTileBar
-            </>
-        </GridListTileBar>
+        <GridListTileBar />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

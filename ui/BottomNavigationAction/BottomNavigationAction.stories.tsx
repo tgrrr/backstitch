@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('BottomNavigationAction', module).add('Default', () => (
-    <BottomNavigationAction
-        className='myClass'
-    >
-        <>
-            BottomNavigationAction
-        </>
-    </BottomNavigationAction>
+    <BottomNavigationAction className='myClass' />
 ));

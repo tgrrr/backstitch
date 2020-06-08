@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('InputBase', module).add('Default', () => (
-    <InputBase
-        className='myClass'
-    >
-        <>
-            InputBase
-        </>
-    </InputBase>
+    <InputBase className='myClass' />
 ));

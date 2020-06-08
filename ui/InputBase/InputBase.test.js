@@ -4,11 +4,7 @@ import { InputBase } from '.'
 
 it('InputBase: default', () => {
     const component = renderer.create(
-        <InputBase>
-            <>
-                InputBase
-            </>
-        </InputBase>
+        <InputBase />
     )
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()

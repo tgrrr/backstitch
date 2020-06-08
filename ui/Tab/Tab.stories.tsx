@@ -11,11 +11,5 @@ export default {
 };
 
 storiesOf('Tab', module).add('Default', () => (
-    <Tab
-        className='myClass'
-    >
-        <>
-            Tab
-        </>
-    </Tab>
+    <Tab className='myClass' />
 ));

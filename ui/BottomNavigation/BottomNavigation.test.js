@@ -5,9 +5,9 @@ import { BottomNavigation } from '.'
 it('BottomNavigation: default', () => {
     const component = renderer.create(
         <BottomNavigation>
-            <>
+            <span>
                 BottomNavigation
-            </>
+            </span>
         </BottomNavigation>
     )
   const tree = component.toJSON()
