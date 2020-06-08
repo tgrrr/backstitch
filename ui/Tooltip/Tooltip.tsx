@@ -3,7 +3,7 @@ import TooltipStyled from './TooltipStyled';
 import { Tooltip as MaterialTooltip } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    children: React.ReactElement<any, any>;
     className?: string;
     title: string;
 }

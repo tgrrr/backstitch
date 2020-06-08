@@ -3,10 +3,9 @@ import ModalStyled from './ModalStyled';
 import { Modal as MaterialModal } from '@material-ui/core';
 
 interface Props {
-    open: boolean;
-
-    children?: React.ReactNode;
+    children: React.ReactElement; // Needs to be able to hold a ref
     className?: string;
+    open: boolean;
 }
 
 const Modal: React.FC<Props> = ({
