@@ -13,9 +13,8 @@ export default {
 storiesOf('MobileStepper', module).add('Default', () => (
     <MobileStepper
         className='myClass'
-    >
-        <>
-            MobileStepper
-        </>
-    </MobileStepper>
+        steps={3}
+        backButton={<button />}
+        nextButton={<button />}
+    />
 ));

@@ -13,6 +13,7 @@ export default {
 storiesOf('Tooltip', module).add('Default', () => (
     <Tooltip
         className='myClass'
+        title='Tooltip title'
     >
         <>
             Tooltip

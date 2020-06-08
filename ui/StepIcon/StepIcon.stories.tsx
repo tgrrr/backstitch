@@ -1,4 +1,5 @@
 import * as React from 'react';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 import { storiesOf } from '@storybook/react';
 // import { action } from '@storybook/addon-actions';
@@ -13,6 +14,7 @@ export default {
 storiesOf('StepIcon', module).add('Default', () => (
     <StepIcon
         className='myClass'
+        icon={SettingsIcon}
     >
         <>
             StepIcon

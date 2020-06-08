@@ -13,6 +13,8 @@ export default {
 storiesOf('TabScrollButton', module).add('Default', () => (
     <TabScrollButton
         className='myClass'
+        direction='right'
+        orientation='vertical'
     >
         <>
             TabScrollButton

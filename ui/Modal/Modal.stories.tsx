@@ -13,6 +13,7 @@ export default {
 storiesOf('Modal', module).add('Default', () => (
     <Modal
         className='myClass'
+        open={true}
     >
         <>
             Modal

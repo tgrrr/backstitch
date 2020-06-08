@@ -14,8 +14,8 @@ storiesOf('StepContent', module).add('Default', () => (
     <StepContent
         className='myClass'
     >
-        <>
+        <div>
             StepContent
-        </>
+        </div>
     </StepContent>
 ));
