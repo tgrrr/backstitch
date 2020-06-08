@@ -3,8 +3,9 @@
 ☐ Complex component demos @created(20-06-05 15:54)
 
 interface Props:
-    ✔ Update main template with Omit and extended props @created(20-06-08 18:48) @done(20-06-08 19:34)
     ☐ Run updateImport on most or all components @created(20-06-08 18:02)
+
+    ✔ Update main template with Omit and extended props @created(20-06-08 18:48) @done(20-06-08 19:34)
     ✔ Checkbox: Type '{ children?: ReactNode; }' has no properties in common with type 'IntrinsicAttributes & CheckboxProps'.  TS2559 @created(20-06-08 14:47) @done(20-06-08 19:34)
         <Checkbox
         checked={checked}
@@ -27,17 +28,44 @@ interface Props:
             className?: string;
         }            
 
-Update basic component tests:
+Tests:
+
     ✔ doesn't accept a Fragment as a child. Consider providing an array instead: Breadcrumbs BottomNavigation Select Menu Step ButtonGroup @created(20-06-08 19:14) @done(20-06-08 19:15)
     ✔ No Children: Chip Tab @created(20-06-08 19:15) @done(20-06-08 19:15)
     ✔ Required props: Tooltip, Modal open, RootRef rootRef, SwipeableDrawer onClose onOpen open @created(20-06-08 19:15) @done(20-06-08 19:15)
+
+    >    Test Suites: 4 failed, 107 passed, 111 total
+    >    Tests:       5 failed, 107 passed, 112 total
+    >    Snapshots:   107 passed, 107 total
+    >    Time:        33.507s, estimated 37s
+    >    Ran all test suites.
+
     ☐ Material-UI: <StepContent /> is only designed for use with the vertical stepper. @created(20-06-08 19:15)
+    ☐ Another testing library @created(20-06-08 23:21)
+        Why?:
+            `TypeError: Cannot read property 'style' of null`
+                TextareaAutosize
+            `Error: Uncaught [TypeError: parentInstance.children.indexOf is not a function]` https://github.com/reactjs/react-modal/issues/553 @created(20-06-08 23:21)
+                Portal
+                SwipableDrawer
+                Modal
+
+        Possible solution:
+            ```
+            import EnzymeToJson from 'enzyme-to-json';
+            import { mount } from 'enzyme';
+
+            test("renders correctly", () => {
+                const subject = mount(<YourComponent>);
+                expect(EnzymeToJson(subject)).toMatchSnapshot();
+            });
+            ```
 
 ☐ minimising bundle size with tree shaking: https://material-ui.com/guides/minimizing-bundle-size/ @created(20-06-08 01:30)
 
 Props:
     ☐ name prop required on inputs @created(20-06-07 23:36)
-    ☐ aria-controls= @created(20-06-07 23:00)
+    ☐ `aria-controls=` @created(20-06-07 23:00)
 
 ✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
 
@@ -89,20 +117,21 @@ Docs:
         https://github.com/mui-org/material-ui/issues/7853
         see: https://material-ui.com/guides/typescript/
         material-ui component types: https://github.com/DefinitelyTyped/DefinitelyTyped/types/material-ui/index.d.ts
-
     
     ✔ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01) @done(20-06-05 15:41)
     ✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41)
 
 LATER:
     Other library components:
-        ☐ Bare component without library @created(20-06-07 23:36)
-        ☐ Bootstrap @created(20-06-05 15:54)
-        ☐ Formik @created(20-06-05 15:54)
+        Bare component without library @created(20-06-07 23:36)
+        Bootstrap @created(20-06-05 15:54)
+        Formik @created(20-06-05 15:54)
 
     Refactor:
-        ☐ Refactor update `Props` -> something like `<%= name %>Props` @created(20-06-08 17:42)
-        ☐ Refactor Typescript to its own file @created(20-06-08 18:03)
+        stories: myClass update to reduce confusion @created(20-06-08 21:20)
+        Refactor update `Props` -> something like `<%= name %>Props` @created(20-06-08 17:42)
+        Refactor Typescript to its own file @created(20-06-08 18:03)
+        ? rename `material` to `mui`
     utils: myVar === undefined @created(20-06-07 21:16)
 
     Hygen:
@@ -134,21 +163,22 @@ LATER:
             ```
 
     Storybook:
-        ☐ command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
+        command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
         [Storybook addons](https://storybook.js.org/addons/) @created(20-06-05 11:22)
             viewport
             source
             docs
+
     CRA template + typescript @created(20-05-27 19:08)
     Analyse most used material-ui components and props with github graphql api
     snippets in vscode, atom, sublime-text
 
-    pages:
-        ☐ add containers @created(20-06-04 12:37)
-        ☐ index file points to container @created(20-06-05 11:22)
+    Pages:
+        add containers @created(20-06-04 12:37)
+        index file points to container @created(20-06-05 11:22)
 
     Cypress:
-        ☐ Can I run cypress tests that are throughout the project? @created(20-06-04 12:53)
+        Can I run cypress tests that are throughout the project? @created(20-06-04 12:53)
         ? move tests to cypress folder @created(20-06-04 12:37)
 ___
 
