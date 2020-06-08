@@ -1,8 +1,18 @@
 import * as React from 'react';
 import InputStyled from './InputStyled';
-import { Input as MaterialInput } from '@material-ui/core';
+import MaterialInput, {
+    InputProps as MaterialInputProps,
+} from '@material-ui/core/Input';
 
-interface Props {
+interface Props
+    extends MaterialInputProps
+        // Uncomment these lines to disable the InputProps props:
+        // , Omit<
+        // MaterialInputProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     className?: string;
 }
 

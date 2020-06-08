@@ -1,11 +1,23 @@
 import * as React from 'react';
 import TabsStyled from './TabsStyled';
-import { Tabs as MaterialTabs } from '@material-ui/core';
+import MaterialTabs, {
+    TabsProps as MaterialTabsProps,
+} from '@material-ui/core/Tabs';
 
-interface Props {
-    children: React.ReactNode;
-    className?: string;
-}
+
+interface Props
+    extends MaterialTabsProps
+        // Uncomment these lines to disable the TabsProps props:
+        // , Omit<
+        // MaterialTabsProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+        children?: React.ReactNode;
+        className?: string;
+    }
+
 
 const Tabs: React.FC<Props> = ({ children, className, ...rest }) => (
     <TabsStyled>

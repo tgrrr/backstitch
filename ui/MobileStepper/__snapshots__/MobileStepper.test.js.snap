@@ -10,12 +10,26 @@ exports[`MobileStepper: default 1`] = `
   >
     <div
       className="MuiPaper-root MuiMobileStepper-root MuiMobileStepper-positionBottom MuiPaper-elevation0"
+      netButton={<button />}
     >
+      <button />
       <div
         className="MuiMobileStepper-dots"
       >
         <div
           className="MuiMobileStepper-dot MuiMobileStepper-dotActive"
+        />
+        <div
+          className="MuiMobileStepper-dot"
+        />
+        <div
+          className="MuiMobileStepper-dot"
+        />
+        <div
+          className="MuiMobileStepper-dot"
+        />
+        <div
+          className="MuiMobileStepper-dot"
         />
       </div>
     </div>

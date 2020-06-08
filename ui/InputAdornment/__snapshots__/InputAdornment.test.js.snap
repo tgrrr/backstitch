@@ -9,7 +9,7 @@ exports[`InputAdornment: default 1`] = `
     data-testid="Inputadornment"
   >
     <div
-      className="MuiInputAdornment-root"
+      className="MuiInputAdornment-root MuiInputAdornment-positionStart"
     >
       InputAdornment
     </div>

@@ -1,24 +1,42 @@
 import * as React from 'react';
 import MobileStepperStyled from './MobileStepperStyled';
-import { MobileStepper as MaterialMobileStepper } from '@material-ui/core';
+import MaterialMobileStepper, {
+    MobileStepperProps as MaterialMobileStepperProps,
+} from '@material-ui/core/MobileStepper';
+import { LinearProgressProps } from '@material-ui/core/LinearProgress';
 
-interface Props {
-    children?: React.ReactNode;
-    className?: string;
-    steps: number;
-}
+interface Props 
+    extends MaterialMobileStepperProps
+        // Uncomment these lines to disable the MobileStepperProps props:
+        // , Omit<
+        // MaterialMobileStepperProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+        className?: string;
+        steps: number;
+        backButton: React.ReactNode;
+        nextButton: React.ReactNode;
+        LinearProgressProps?: Partial<LinearProgressProps>;
+    }
+
 
 const MobileStepper: React.FC<Props> = ({ 
-    children, 
+    backButton,
+    nextButton,
     className, 
     steps, 
     ...rest 
 }) => (
     <MobileStepperStyled>
         <div className={['Mobilestepper', className && className].join(' ')} data-testid='Mobilestepper'>
-            <MaterialMobileStepper {...rest}>
-                {children}
-            </MaterialMobileStepper>            
+            <MaterialMobileStepper 
+                backButton={backButton}
+                nextButton={nextButton}
+                steps={steps}
+                {...rest}
+            />
         </div>
     </MobileStepperStyled>
 );

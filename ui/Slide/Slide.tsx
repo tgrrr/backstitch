@@ -1,11 +1,22 @@
 import * as React from 'react';
 import SlideStyled from './SlideStyled';
-import { Slide as MaterialSlide } from '@material-ui/core';
+import MaterialSlide, {
+    SlideProps as MaterialSlideProps,
+} from '@material-ui/core/Slide';
 
-interface Props {
-    children?: React.ReactNode;
-    className?: string;
-}
+
+interface Props
+    extends MaterialSlideProps
+        // Uncomment these lines to disable the SlideProps props:
+        // , Omit<
+        // MaterialSlideProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+        children?: React.ReactElement<any, any>;
+        className?: string;
+    }
 
 const Slide: React.FC<Props> = ({ children, className, ...rest }) => (
     <SlideStyled>

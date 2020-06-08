@@ -1,8 +1,17 @@
 import * as React from 'react';
 import CheckboxStyled from './CheckboxStyled';
-import { Checkbox as MaterialCheckbox } from '@material-ui/core';
+import MaterialCheckbox, {
+    CheckboxProps as MaterialCheckboxProps,
+} from '@material-ui/core/Checkbox';
 
 interface Props
+    extends MaterialCheckboxProps
+    // Uncomment these lines to disable the CircularProgressProps props:
+    // , Omit<
+    // MaterialCheckboxProps,
+    // | 'checked'
+    // | 'type'
+    // > 
     {
         className?: string;
     }

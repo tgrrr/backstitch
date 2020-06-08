@@ -3,7 +3,7 @@ import SnackbarStyled from './SnackbarStyled';
 import { Snackbar as MaterialSnackbar } from '@material-ui/core';
 
 interface Props {
-    children?: React.ReactNode;
+    children?: React.ReactElement<any, any>;
     className?: string;
 }
 

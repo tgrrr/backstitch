@@ -1,8 +1,18 @@
 import * as React from 'react';
 import FilledInputStyled from './FilledInputStyled';
-import { FilledInput as MaterialFilledInput } from '@material-ui/core';
+import MaterialFilledInput, {
+    FilledInputProps as MaterialFilledInputProps,
+} from '@material-ui/core/FilledInput';
 
-interface Props {
+interface Props
+    extends MaterialFilledInputProps
+        // Uncomment these lines to disable the FilledInputProps props:
+        // , Omit<
+        // MaterialFilledInputProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     className?: string;
 }
 

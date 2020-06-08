@@ -1,8 +1,17 @@
 import * as React from 'react';
 import CircularProgressStyled from './CircularProgressStyled';
-import { CircularProgress as MaterialCircularProgress } from '@material-ui/core';
+import MaterialCircularProgress, {
+    CircularProgressProps as MaterialCircularProgressProps,
+} from '@material-ui/core/CircularProgress';
 
 interface Props 
+    extends MaterialCircularProgressProps
+    // Uncomment these lines to disable the CircularProgressProps props:
+    // , Omit<
+    // MaterialCircularProgressProps,
+    // | 'checked'
+    // | 'type'
+    // > 
     {
         className?: string;
     }

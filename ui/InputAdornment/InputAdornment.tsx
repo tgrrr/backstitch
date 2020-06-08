@@ -1,8 +1,18 @@
 import * as React from 'react';
 import InputAdornmentStyled from './InputAdornmentStyled';
-import { InputAdornment as MaterialInputAdornment } from '@material-ui/core';
+import MaterialInputAdornment, {
+    InputAdornmentProps as MaterialInputAdornmentProps,
+} from '@material-ui/core/InputAdornment';
 
-interface Props {
+interface Props
+    extends MaterialInputAdornmentProps
+        // Uncomment these lines to disable the InputAdornmentProps props:
+        // , Omit<
+        // MaterialInputAdornmentProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children: string | React.ReactNode;  // The content of the component, normally an IconButton or string.
     className?: string;
     position: 'start' | 'end';

@@ -1,8 +1,18 @@
 import * as React from 'react';
 import InputBaseStyled from './InputBaseStyled';
-import { InputBase as MaterialInputBase } from '@material-ui/core';
+import MaterialInputBase, {
+    InputBaseProps as MaterialInputBaseProps,
+} from '@material-ui/core/InputBase';
 
-interface Props {
+interface Props
+    extends MaterialInputBaseProps
+        // Uncomment these lines to disable the InputBaseProps props:
+        // , Omit<
+        // MaterialInputBaseProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     className?: string;
 }
 

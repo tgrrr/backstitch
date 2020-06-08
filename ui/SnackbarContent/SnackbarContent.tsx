@@ -1,8 +1,19 @@
 import * as React from 'react';
 import SnackbarContentStyled from './SnackbarContentStyled';
-import { SnackbarContent as MaterialSnackbarContent } from '@material-ui/core';
+import MaterialSnackbarContent, {
+    SnackbarContentProps as MaterialSnackbarContentProps,
+} from '@material-ui/core/SnackbarContent';
 
-interface Props {
+
+interface Props
+    extends MaterialSnackbarContentProps
+        // Uncomment these lines to disable the SnackbarContentProps props:
+        // , Omit<
+        // MaterialSnackbarContentProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children?: React.ReactNode;
     className?: string;
 }

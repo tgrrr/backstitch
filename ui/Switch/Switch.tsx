@@ -1,8 +1,19 @@
 import * as React from 'react';
 import SwitchStyled from './SwitchStyled';
-import { Switch as MaterialSwitch } from '@material-ui/core';
+import MaterialSwitch, {
+    SwitchProps as MaterialSwitchProps,
+} from '@material-ui/core/Switch';
 
-interface Props {
+
+interface Props
+    extends MaterialSwitchProps
+        // Uncomment these lines to disable the SwitchProps props:
+        // , Omit<
+        // MaterialSwitchProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children?: React.ReactNode;
     className?: string;
 }

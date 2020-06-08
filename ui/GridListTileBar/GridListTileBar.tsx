@@ -1,8 +1,18 @@
 import * as React from 'react';
 import GridListTileBarStyled from './GridListTileBarStyled';
-import { GridListTileBar as MaterialGridListTileBar } from '@material-ui/core';
+import MaterialGridListTileBar, {
+    GridListTileBarProps as MaterialGridListTileBarProps,
+} from '@material-ui/core/GridListTileBar';
 
-interface Props {
+interface Props
+    extends MaterialGridListTileBarProps
+        // Uncomment these lines to disable the GridListTileBarProps props:
+        // , Omit<
+        // MaterialGridListTileBarProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     className?: string;
 }
 

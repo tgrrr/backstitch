@@ -1,9 +1,19 @@
 import * as React from 'react';
 import ListItemAvatarStyled from './ListItemAvatarStyled';
-import { ListItemAvatar as MaterialListItemAvatar } from '@material-ui/core';
+import MaterialListItemAvatar, {
+    ListItemAvatarProps as MaterialListItemAvatarProps,
+} from '@material-ui/core/ListItemAvatar';
 
-interface Props {
-    children?: React.ReactNode;
+interface Props
+    extends MaterialListItemAvatarProps
+        // Uncomment these lines to disable the ListItemAvatarProps props:
+        // , Omit<
+        // MaterialListItemAvatarProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+    children: React.ReactElement;
     className?: string;
 }
 

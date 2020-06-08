@@ -1,8 +1,19 @@
 import * as React from 'react';
 import OutlinedInputStyled from './OutlinedInputStyled';
-import { OutlinedInput as MaterialOutlinedInput } from '@material-ui/core';
+import MaterialOutlinedInput, {
+    OutlinedInputProps as MaterialOutlinedInputProps,
+} from '@material-ui/core/OutlinedInput';
 
-interface Props {
+
+interface Props
+    extends MaterialOutlinedInputProps
+        // Uncomment these lines to disable the OutlinedInputProps props:
+        // , Omit<
+        // MaterialOutlinedInputProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children?: React.ReactNode;
     className?: string;
 }

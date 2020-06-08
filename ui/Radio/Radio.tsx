@@ -1,8 +1,18 @@
 import * as React from 'react';
 import RadioStyled from './RadioStyled';
-import { Radio as MaterialRadio } from '@material-ui/core';
+import MaterialRadio, {
+    RadioProps as MaterialRadioProps,
+} from '@material-ui/core/Radio';
 
-interface Props {
+interface Props
+    extends MaterialRadioProps
+        // Uncomment these lines to disable the RadioProps props:
+        // , Omit<
+        // MaterialRadioProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children?: React.ReactNode;
     className?: string;
 }

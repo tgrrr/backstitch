@@ -1,8 +1,19 @@
 import * as React from 'react';
 import StepConnectorStyled from './StepConnectorStyled';
-import { StepConnector as MaterialStepConnector } from '@material-ui/core';
+import MaterialStepConnector, {
+    StepConnectorProps as MaterialStepConnectorProps,
+} from '@material-ui/core/StepConnector';
 
-interface Props {
+
+interface Props
+    extends MaterialStepConnectorProps
+        // Uncomment these lines to disable the StepConnectorProps props:
+        // , Omit<
+        // MaterialStepConnectorProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
     children?: React.ReactNode;
     className?: string;
 }
