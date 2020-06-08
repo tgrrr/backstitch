@@ -4,7 +4,7 @@ import { Tooltip } from '.'
 
 it('Tooltip: default', () => {
     const component = renderer.create(
-        <Tooltip>
+        <Tooltip title='foo'>
             <>
                 Tooltip
             </>

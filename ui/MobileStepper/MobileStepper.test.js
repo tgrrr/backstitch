@@ -4,7 +4,9 @@ import { MobileStepper } from '.'
 
 it('MobileStepper: default', () => {
     const component = renderer.create(
-        <MobileStepper>
+        <MobileStepper
+            steps={5}
+        >
             <>
                 MobileStepper
             </>

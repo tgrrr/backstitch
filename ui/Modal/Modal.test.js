@@ -4,7 +4,9 @@ import { Modal } from '.'
 
 it('Modal: default', () => {
     const component = renderer.create(
-        <Modal>
+        <Modal
+            open={true}
+        >
             <>
                 Modal
             </>

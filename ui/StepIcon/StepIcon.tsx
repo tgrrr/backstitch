@@ -5,6 +5,7 @@ import { StepIcon as MaterialStepIcon } from '@material-ui/core';
 interface Props {
     children?: React.ReactNode;
     className?: string;
+    icon: React.ReactNode;
 }
 
 const StepIcon: React.FC<Props> = ({ children, className, ...rest }) => (
