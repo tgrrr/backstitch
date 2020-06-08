@@ -4,7 +4,11 @@ import { SwipeableDrawer } from '.'
 
 it('SwipeableDrawer: default', () => {
     const component = renderer.create(
-        <SwipeableDrawer>
+        <SwipeableDrawer
+            onOpen={() => { }}
+            onClose={() => { }}
+            open={true}
+        >
             <>
                 SwipeableDrawer
             </>

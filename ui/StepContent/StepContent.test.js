@@ -2,9 +2,13 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { StepContent } from '.'
 
+const defaultProps = {
+    orientation: 'vertical',
+};
+
 it('StepContent: default', () => {
     const component = renderer.create(
-        <StepContent>
+        <StepContent {...defaultProps} >
             <>
                 StepContent
             </>

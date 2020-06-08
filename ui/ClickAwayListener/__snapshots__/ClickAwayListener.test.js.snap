@@ -8,7 +8,12 @@ exports[`ClickAwayListener: default 1`] = `
     className="Clickawaylistener "
     data-testid="Clickawaylistener"
   >
-    ClickAwayListener
+    <span
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+    >
+      ClickAwayListener
+    </span>
   </div>
 </div>
 `;

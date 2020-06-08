@@ -8,6 +8,7 @@ interface Props {
     container?: React.ReactInstance | (() => React.ReactInstance | null) | null;
 }
 
+
 const Portal: React.FC<Props> = ({
     children,
     className,

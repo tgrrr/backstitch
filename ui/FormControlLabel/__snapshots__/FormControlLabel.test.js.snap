@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormControlLabel: default 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <div
+    className="Formcontrollabel "
+    data-testid="Formcontrollabel"
+  >
+    <label
+      className="MuiFormControlLabel-root"
+    >
+      <input
+        id="vehicle2"
+        name="vehicle2"
+        type="checkbox"
+        value="Car"
+      />
+      <span
+        className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        foo
+      </span>
+    </label>
+  </div>
+</div>
+`;
