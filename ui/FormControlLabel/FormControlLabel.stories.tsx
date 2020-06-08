@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Checkbox } from '../Checkbox';
 
 import { storiesOf } from '@storybook/react';
 // import { action } from '@storybook/addon-actions';
@@ -13,9 +14,7 @@ export default {
 storiesOf('FormControlLabel', module).add('Default', () => (
     <FormControlLabel
         className='myClass'
-    >
-        <>
-            FormControlLabel
-        </>
-    </FormControlLabel>
+        control={<Checkbox />} 
+        label='Foo'
+    />
 ));

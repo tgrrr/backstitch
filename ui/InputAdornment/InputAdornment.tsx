@@ -11,7 +11,7 @@ interface Props {
 const InputAdornment: React.FC<Props> = ({
     children,
     className,
-    position,
+    position = 'start',
     ...rest
 }) => (
     <InputAdornmentStyled>

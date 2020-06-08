@@ -15,9 +15,7 @@ exports[`GridList: default 1`] = `
           "margin": -2,
         }
       }
-    >
-      GridList
-    </ul>
+    />
   </div>
 </div>
 `;

@@ -11,7 +11,15 @@ exports[`Step: default 1`] = `
     <div
       className="MuiStep-root"
     >
-      Step
+      <span
+        active={false}
+        completed={false}
+        disabled={false}
+        expanded={false}
+        icon={NaN}
+      >
+        Step
+      </span>
     </div>
   </div>
 </div>

@@ -10,7 +10,7 @@ exports[`TabScrollButton: default 1`] = `
   >
     <div
       aria-disabled={false}
-      className="MuiButtonBase-root MuiTabScrollButton-root"
+      className="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-vertical"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}

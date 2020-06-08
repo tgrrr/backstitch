@@ -13,6 +13,7 @@ export default {
 storiesOf('InputAdornment', module).add('Default', () => (
     <InputAdornment
         className='myClass'
+        position='start'
     >
         <>
             InputAdornment

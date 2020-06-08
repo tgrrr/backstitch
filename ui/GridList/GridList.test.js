@@ -5,9 +5,7 @@ import { GridList } from '.'
 it('GridList: default', () => {
     const component = renderer.create(
         <GridList>
-            <>
-                GridList
-            </>
+            GridList
         </GridList>
     )
   const tree = component.toJSON()
