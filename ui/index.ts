@@ -78,7 +78,6 @@ import Popper from './Popper/Popper';
 import Portal from './Portal/Portal';
 import Radio from './Radio/Radio';
 import RadioGroup from './RadioGroup/RadioGroup';
-import RootRef from './RootRef/RootRef';
 import Select from './Select/Select';
 import Slide from './Slide/Slide';
 import Slider from './Slider/Slider';
@@ -193,7 +192,6 @@ export {
     Portal,
     Radio,
     RadioGroup,
-    RootRef,
     Select,
     Slide,
     Slider,
