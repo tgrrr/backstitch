@@ -133,7 +133,7 @@ export default function IconLabelButtons() {
 
 ## Getting Starteed
 
-### Setup with Create React App (CRA)
+### Eg. Setup with Create React App (CRA)
 
 ```zsh
 npx create-react-app MyApp  --template typescript
@@ -178,6 +178,16 @@ Add typescript to your project:
 
 ```zsh
 yarn add -D typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+Add material-ui to your `tsconfig.json` file
+
+```git
+{
+    "compilerOptions": {
++       "types": ["material-ui"]
+    }
+}
 ```
 
 ### 3. Add the dependencies
@@ -238,7 +248,52 @@ function App() {
 export default App;
 ```
 
-### 6. That's it!
+### 6. Delete the unused components
+
+Depending on how you've setup Webpack, we want to keep your bundle size small. There's quite a few components, and you wont need all of them. So delete the ones you don't need. You can always cherrypick them later.
+
+To learn more, see: [Minimising bundle size with tree shaking]
+
+
+### 7. That's it!
+
+At the moment, the components are just set up to let Material-ui deal with the props
+
+Eg.
+
+```ts
+import * as React from 'react';
+import InputStyled from './InputStyled';
+import MaterialInput, {
+    InputProps as MaterialInputProps,
+} from '@material-ui/core/Input';
+
+interface Props
+    extends MaterialInputProps
+        // Uncomment these lines to disable the InputProps props:
+        // , Omit<
+        // MaterialInputProps,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+    className?: string;
+}
+
+const Input: React.FC<Props> = ({ className, ...rest }) => (
+    <InputStyled>
+        <div className={['Input', className && className].join(' ')} data-testid='Input'>
+            <MaterialInput {...rest} />
+        </div>
+    </InputStyled>
+);
+
+export default Input;
+```
+
+This isn't my favourite pattern, it's better to be more explicit by declaring exactly which props we want to include (or exclude using `Omit`).
+
+As you customise each component, it's a good idea to remove any props being passed with `{...rest}`, and limit it to the props that we know that we'll need.
 
 ___
 
@@ -379,3 +434,4 @@ Here's the current [todo list](./src/common/backstitch.todo)
 
 [Material UI]: https://material-ui.com/
 [Semantic commit messages]: https://seesparkbox.com/foundry/semantic_commit_messages
+[Minimising bundle size with tree shaking]: https://material-ui.com/guides/minimizing-bundle-size/

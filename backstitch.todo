@@ -1,187 +1,140 @@
 # Backstitch TODO:
 
+Props:
+    ☐ required name prop required on inputs @created(20-06-07 23:36)
+    ☐ `aria-controls=` in 76 places @created(20-06-07 23:00)
+
 ☐ Complex component demos @created(20-06-05 15:54)
 
-Props:
-    ☐ name prop required on inputs @created(20-06-07 23:36)
-    ☐ `aria-controls=` @created(20-06-07 23:00)
-
-Storybook:
-    ☐ Publish storybook @created(20-06-05 11:24)
-        ☐ Storybook link in Readme @created(20-06-05 11:24)
-    ☐ [Theme](medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866) @created(20-06-07 20:25)
-
-Git:
-    ☐ material v4.10.1 tag git @created(20-06-05 12:31) @created(20-06-05 15:40)
-
-Docs: 
-    ☐ Does this link works on github for common vs common-ui: Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
-    ☐ minimising bundle size with tree shaking: https://material-ui.com/guides/minimizing-bundle-size/ @created(20-06-08 01:30)
-    ☐ Delete unused components @created(20-06-08 18:00)
-    ☐ I'm not a big fan of just including `{...rest}`, I'd rather be very specific with the props @created(20-06-08 15:58)
-    ☐ Note: can't replace a line: https://github.com/jondot/hygen/issues/106 @created(20-06-08 17:59)
-    ☐ link to .package.json @created(20-06-05 15:27)
-    
-    ☐ Add typescript config options @created(20-06-08 23:51)
-        `/// <reference types="@types/material-ui" />`
-        ```git
-        {
-            "compilerOptions": {
-        +       "types": ["material-ui"]
-            }
-        }
-        ```
-
-        https://github.com/mui-org/material-ui/issues/7853
-        see: https://material-ui.com/guides/typescript/
-        material-ui component types: https://github.com/DefinitelyTyped/DefinitelyTyped/types/material-ui/index.d.ts
+☐ Does this link works on github for common Note: there's an example in [common/.config/.package.json](./common/.config/.package.json) @created(20-05-27 20:21)
 
 Tests:
     ☐ Material-UI: `<StepContent />` is only designed for use with the vertical stepper. @created(20-06-08 19:15)
-    ☐ Another testing library @created(20-06-08 23:21)
-        Why?:
+    ☐ Replace testing library @created(20-06-08 23:21)
+        Why? We have these broken tests, which are still outstanding issued with `react-test-renderer`
             `TypeError: Cannot read property 'style' of null`
                 TextareaAutosize
             `Error: Uncaught [TypeError: parentInstance.children.indexOf is not a function]` https://github.com/reactjs/react-modal/issues/553 @created(20-06-08 23:21)
                 Portal
                 SwipableDrawer
                 Modal
+    Cypress as test-runner: 
+        ☐ Throughout project or in cypress testing folder? @created(20-06-04 12:53) @created(20-06-09 00:21)
+        ☐ Cucumber @created(20-06-09 00:21)
 
-LATER:
-    Other library components:
-        Bare component without library @created(20-06-07 23:36)
-        Bootstrap @created(20-06-05 15:54)
-        Formik @created(20-06-05 15:54)
+================================= LATER ===================================
 
-    Refactor:
-        stories: myClass update to reduce confusion @created(20-06-08 21:20)
-        Refactor update `Props` -> something like `<%= name %>Props` @created(20-06-08 17:42)
-        Refactor Typescript to its own file @created(20-06-08 18:03)
-        ? rename `material` to `mui`
-    utils: myVar === undefined @created(20-06-07 21:16)
+Storybook:
+    Publish storybook @created(20-06-05 11:24)
+        Storybook link in Readme @created(20-06-05 11:24)
+    [Theme](medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866) @created(20-06-07 20:25)
 
-    Hygen:
-        components @created(20-06-05 12:50)
-        custom folder location:
-            actionfolder for custom folder https://www.hygen.io/templates
-                ```
-                <% if(locals.message){ -%>
-                    message: <%= message %>
-                <% } -%>
-                ```
+Other library components:
+    Bare component without library @created(20-06-07 23:36)
+    Bootstrap @created(20-06-05 15:54)
+    Formik @created(20-06-05 15:54)
 
-        unless_exists: true https://www.hygen.io/templates
-        list available props per component @created(20-06-04 23:29)
-        global variables eg. `variant: 'outlined'` @created(20-06-05 12:50)
-        use-effect, state, containers, redux elements @created(20-06-05 12:50)
-        More tests with either https://reactjs.org/docs/test-renderer.html or https://testing-library.com/docs/react-testing-library/example-intro @created(20-06-05 11:26)
-        install dependencies:
+Refactor:
+    stories: myClass update to reduce ambiguity between props @created(20-06-08 21:20)
+    Stories into demos with multiple props combined (eg. Tabs)
+    Refactor update `Props` -> something like `<%= name %>Props` @created(20-06-08 17:42)
+    Refactor Typescript to its own file @created(20-06-08 18:03)
+    ? rename `material` to `mui`
+utils: myVar === undefined @created(20-06-07 21:16)
+
+Hygen:
+    components @created(20-06-05 12:50)
+    custom folder location:
+        actionfolder for custom folder https://www.hygen.io/templates
             ```
-            Here's a common task: add a dependency and then run yarn install.
-            ---
-            inject: true
-            to: package.json
-            after: dependencies
-            skip_if: lodash
-            sh: cd <%= cwd %> && yarn install
-            ---
-            "lodash":"*",
+            <% if(locals.message){ -%>
+                message: <%= message %>
+            <% } -%>
             ```
 
-    Storybook:
-        command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
-        [Storybook addons](https://storybook.js.org/addons/) @created(20-06-05 11:22)
-            viewport
-            source
-            docs
+    unless_exists: true https://www.hygen.io/templates
+    list available props per component @created(20-06-04 23:29)
+    global variables eg. `variant: 'outlined'` @created(20-06-05 12:50)
+    use-effect, state, containers, redux elements @created(20-06-05 12:50)
+    More tests with either https://reactjs.org/docs/test-renderer.html or https://testing-library.com/docs/react-testing-library/example-intro @created(20-06-05 11:26)
+    install dependencies:
+        ```
+        Here's a common task: add a dependency and then run yarn install.
+        ---
+        inject: true
+        to: package.json
+        after: dependencies
+        skip_if: lodash
+        sh: cd <%= cwd %> && yarn install
+        ---
+        "lodash":"*",
+        ```
 
-    CRA template + typescript @created(20-05-27 19:08)
-    Analyse most used material-ui components and props with github graphql api
-    snippets in vscode, atom, sublime-text
+Storybook:
+    command prompt for file/structure https://www.hygen.io/generators @created(20-06-05 13:29)
+    [Storybook addons](https://storybook.js.org/addons/) @created(20-06-05 11:22)
+        viewport
+        source
+        docs
 
-    Pages:
-        add containers @created(20-06-04 12:37)
-        index file points to container @created(20-06-05 11:22)
+CRA template + typescript @created(20-05-27 19:08)
+Analyse most used material-ui components and props with github graphql api
+snippets in vscode, atom, sublime-text
 
-    Cypress:
-        Can I run cypress tests that are throughout the project? @created(20-06-04 12:53)
-        ? move tests to cypress folder @created(20-06-04 12:37)
+Pages:
+    add containers @created(20-06-04 12:37)
+    index file points to container @created(20-06-05 11:22)
 ___
 
 Archive:
-    ✔ Run updateImport on most or all components @created(20-06-08 18:02) @done(20-06-08 23:49) @project(interface Props)
-    ✔ Update main template with Omit and extended props @created(20-06-08 18:48) @done(20-06-08 19:34) @project(interface Props)
-    ✔ Checkbox: Type '{ children?: ReactNode; }' has no properties in common with type 'IntrinsicAttributes & CheckboxProps'.  TS2559 @created(20-06-08 14:47) @done(20-06-08 19:34) @project(interface Props)
-        <Checkbox
-        checked={checked}
-        onChange={handleChange}
-        inputProps={{ 'aria-label': 'primary checkbox' }}
-        />
-    ✔ Omit props @created(20-06-04 23:29) @done(20-06-08 19:34) @project(interface Props)
-        import { <%= name %> as Material<%= name %>, <%= name %>Props as Material<%= name %>Props } from '@material-ui/core';
-        export interface Props 
-        // extends <%= name %>Props,
-        // useful if you just want to disable 1 or 2 particular props
-        // Omit<
-        //   MaterialCheckboxProps,
-        //   | 'name'
-        //   | 'value'
-        // > {
-        children?: React.ReactNode;
-        className?: string;
-        }            
-    ✔ git setup @created(20-03-24 13:13) @done(20-06-08 19:17) @project(Import each element)
-    ✔ Why is it called backstitch (to do with material) @created(20-06-05 12:51) @done(20-06-05 15:39) @project(Docs)
-    ✔ doesn't accept a Fragment as a child. Consider providing an array instead: Breadcrumbs BottomNavigation Select Menu Step ButtonGroup @created(20-06-08 19:14) @done(20-06-08 19:15) @project(Tests)
-    ✔ No Children: Chip Tab @created(20-06-08 19:15) @done(20-06-08 19:15) @project(Tests)
-    ✔ Required props: Tooltip, Modal open, RootRef rootRef, SwipeableDrawer onClose onOpen open @created(20-06-08 19:15) @done(20-06-08 19:15) @project(Tests)
-    ✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
-    ✔ Material-ui version v4.10.1 @done(20-06-05 15:41) @project(Docs)
-    ✔ Howto: @project(Docs)
-    ✔ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01) @done(20-06-05 15:41) @project(Docs)
-    ✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41) @project(Docs)
-    ✔ squash and merge/rebase @created(20-06-05 11:15) @done(20-06-05 15:39) @project(Git)
-    ✔ AppBar camelcase naming in script @created(20-06-05 11:32) @done(20-06-05 15:39) @project(Git)
-    ✔ Adapter pattern @created(20-05-27 20:10) @done(20-06-05 15:39) @project(Docs)
-    ✔ Component wrappers @created(20-06-05 12:51) @done(20-06-05 15:39) @project(Docs)
-    ✔ create new component @created(20-06-05 15:39) @done(20-06-05 15:39) @project(Docs)
-    ✔ run shell script @created(20-06-05 15:39) @done(20-06-05 15:39) @project(Docs)
-    ✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:39) @project(Docs)
-        }
-    ✔ name prop @created(20-06-05 12:48) @done(20-06-05 15:33)
-    ✔ exact copy of git branch @created(20-06-05 11:15) @done(20-06-08 19:17) @project(Git)
-    ✔ Storybook build @created(20-06-05 11:23) @done(20-06-05 13:45) @project(Storybook)
-    ✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:18) @project(Storybook)
-    ✔ Storybook scripts bug @created(20-06-05 11:19) @done(20-06-05 13:06) @project(Storybook)
-    ✔ wrap child component in storybook @created(20-06-05 13:06) @done(20-06-05 13:45) @project(Storybook)
-    ✔ fix: `src/common/` @created(20-06-04 12:53) @done(20-06-04 20:10) @project(Hygen)
-    ✔ Hygen UI component setup @created(20-02-25 17:08) @done(20-06-04 20:10) @project(Hygen)
-    ✔ Setup Hygen for React apps @done(20-06-04 20:10) @project(Hygen)
-    ✔ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18) @done(20-06-04 19:45) @project(Hygen)
-    x Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08) @project(Hygen)
-        (hygen docs)[https://www.hygen.io/quick-start]
-    x File structure based on https://material-ui.com/ @created(20-03-24 13:10) @project(Import each element)
-    ✔ download material-ui @created(20-03-24 13:13) @done(20-06-04 20:13) @project(Import each element)
-    ✔ rename to backstitch @created(20-05-27 19:08) @done(20-05-27 20:09)
-    ✔ link to this todo @created(20-02-25 14:52) @done(20-02-25 17:00)
-    ✔ add hygen to package.json @created(20-02-25 16:59) @done(20-02-25 16:59)
-    ✔ hygen cra: @created(20-02-25 17:01) @done(20-02-25 17:02)
-    ✔ Add yarn scripts to `package.json` @created(20-06-04 19:08) @done(20-06-05 11:20)
-
-        ```json
-        "scripts": {
-            "hygen": "HYGEN_TMPLS=src/common-ui/_templates hygen",
-        },
-        ```
-    ✔ Stories @created(20-06-04 19:08) @done(20-06-05 11:20)
-    ✔ Bash script @created(10-06-08 23:55) @done(20-06-08 23:55)
-    x Possible solution:
-        ```
-        import EnzymeToJson from 'enzyme-to-json';
-        import { mount } from 'enzyme';
-
-        test("renders correctly", () => {
-            const subject = mount(<YourComponent>);
-            expect(EnzymeToJson(subject)).toMatchSnapshot();
-        });
-        ```
+✔ material v4.10.1 tag git @created(20-06-05 12:31) @created(20-06-05 15:40) @done(20-06-09 00:17) @project(Git)
+✔ Docs: I'm not a big fan of just including `{...rest}`, I'd rather be very specific with the props @created(20-06-08 15:58) @done(20-06-09 00:15) @project(Docs)
+✔ Note: can't replace a line: https://github.com/jondot/hygen/issues/106 @created(20-06-08 17:59) @done(20-06-09 00:08) @project(Docs)
+✔ Minimising bundle size with tree shaking: https://material-ui.com/guides/minimizing-bundle-size/ @created(20-06-08 01:30) @done(20-06-09 00:10) @project(Docs)
+✔ Delete unused components @created(20-06-08 18:00) @done(20-06-09 00:10) @project(Docs)
+✔ link to .package.json @created(20-06-05 15:27) @done(20-06-09 00:07) @project(Docs)
+✔ Add typescript config options @created(20-06-08 23:51) @done(20-06-09 00:05) @project(Docs)
+✔ Run updateImport on most or all components @created(20-06-08 18:02) @done(20-06-08 23:49) @project(interface Props)
+✔ Update main template with Omit and extended props @created(20-06-08 18:48) @done(20-06-08 19:34) @project(interface Props)
+✔ Checkbox: Type '{ children?: ReactNode; }' has no properties in common with type 'IntrinsicAttributes & CheckboxProps'.  TS2559 @created(20-06-08 14:47) @done(20-06-08 19:34) @project(interface Props)
+✔ Omit props @created(20-06-04 23:29) @done(20-06-08 19:34) @project(interface Props)
+✔ git setup @created(20-03-24 13:13) @done(20-06-08 19:17) @project(Import each element)
+✔ Why is it called backstitch (to do with material) @created(20-06-05 12:51) @done(20-06-05 15:39) @project(Docs)
+✔ doesn't accept a Fragment as a child. Consider providing an array instead: Breadcrumbs BottomNavigation Select Menu Step ButtonGroup @created(20-06-08 19:14) @done(20-06-08 19:15) @project(Tests)
+✔ No Children: Chip Tab @created(20-06-08 19:15) @done(20-06-08 19:15) @project(Tests)
+✔ Required props: Tooltip, Modal open, RootRef rootRef, SwipeableDrawer onClose onOpen open @created(20-06-08 19:15) @done(20-06-08 19:15) @project(Tests)
+✔ fix className @created(20-06-05 11:23) @done(20-06-05 12:29)
+✔ Material-ui version v4.10.1 @done(20-06-05 15:41) @project(Docs)
+✔ Howto: @project(Docs)
+✔ [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) @created(20-02-25 17:01) @done(20-06-05 15:41) @project(Docs)
+✔ [git subtree](https://www.atlassian.com/git/tutorials/git-subtree)☐ Why this exists from git into Readme @created(20-02-25 14:47) @done(20-06-05 15:41) @project(Docs)
+✔ squash and merge/rebase @created(20-06-05 11:15) @done(20-06-05 15:39) @project(Git)
+✔ AppBar camelcase naming in script @created(20-06-05 11:32) @done(20-06-05 15:39) @project(Git)
+✔ Adapter pattern @created(20-05-27 20:10) @done(20-06-05 15:39) @project(Docs)
+✔ Component wrappers @created(20-06-05 12:51) @done(20-06-05 15:39) @project(Docs)
+✔ create new component @created(20-06-05 15:39) @done(20-06-05 15:39) @project(Docs)
+✔ run shell script @created(20-06-05 15:39) @done(20-06-05 15:39) @project(Docs)
+✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:39) @project(Docs)
+    }
+✔ name prop @created(20-06-05 12:48) @done(20-06-05 15:33)
+✔ exact copy of git branch @created(20-06-05 11:15) @done(20-06-08 19:17) @project(Git)
+✔ Storybook build @created(20-06-05 11:23) @done(20-06-05 13:45) @project(Storybook)
+✔ Storybook test locally `npx http-server .out` @created(20-06-05 11:23) @done(20-06-05 15:18) @project(Storybook)
+✔ Storybook scripts bug @created(20-06-05 11:19) @done(20-06-05 13:06) @project(Storybook)
+✔ wrap child component in storybook @created(20-06-05 13:06) @done(20-06-05 13:45) @project(Storybook)
+✔ fix: `src/common/` @created(20-06-04 12:53) @done(20-06-04 20:10) @project(Hygen)
+✔ Hygen UI component setup @created(20-02-25 17:08) @done(20-06-04 20:10) @project(Hygen)
+✔ Setup Hygen for React apps @done(20-06-04 20:10) @project(Hygen)
+✔ [Hygen CRA](https://github.com/jondot/hygen-CRA) @created(20-05-27 20:18) @done(20-06-04 19:45) @project(Hygen)
+x Hygen CLI Custom folder (eg. Inputs/Button) @created(20-02-25 17:08) @project(Hygen)
+    (hygen docs)[https://www.hygen.io/quick-start]
+x File structure based on https://material-ui.com/ @created(20-03-24 13:10) @project(Import each element)
+✔ download material-ui @created(20-03-24 13:13) @done(20-06-04 20:13) @project(Import each element)
+✔ rename to backstitch @created(20-05-27 19:08) @done(20-05-27 20:09)
+✔ link to this todo @created(20-02-25 14:52) @done(20-02-25 17:00)
+✔ add hygen to package.json @created(20-02-25 16:59) @done(20-02-25 16:59)
+✔ hygen cra: @created(20-02-25 17:01) @done(20-02-25 17:02)
+✔ Add yarn scripts to `package.json` @created(20-06-04 19:08) @done(20-06-05 11:20)
+✔ Stories @created(20-06-04 19:08) @done(20-06-05 11:20)
+✔ Bash script @created(10-06-08 23:55) @done(20-06-08 23:55)
+x Possible solution:
