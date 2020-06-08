@@ -4,12 +4,22 @@ to: src/common/ui/<%= name %>/<%= name %>.tsx
 <% const comp = h.inflection.undasherize(name) -%>
 import * as React from 'react';
 import <%= name %>Styled from './<%= name %>Styled';
-import { <%= name %> as Material<%= name %> } from '@material-ui/core';
+import Material<%= name %>, {
+    <%= name %>Props as Material<%= name %>Props,
+} from '@material-ui/core/<%= name %>';
 
-interface Props {
-    children?: React.ReactNode;
-    className?: string;
-}
+interface Props
+    extends Material<%= name %>Props
+        // Uncomment these lines to disable the <%= name %>Props props:
+        // , Omit<
+        // Material<%= name %>Props,
+        // | 'propToDisable1'
+        // | 'propToDisable2'
+        // > 
+    {
+        children?: React.ReactNode;
+        className?: string;
+    }
 
 <% if(locals.stateful) { -%>
 interface State {

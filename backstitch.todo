@@ -3,16 +3,16 @@
 ☐ Complex component demos @created(20-06-05 15:54)
 
 interface Props:
+    ✔ Update main template with Omit and extended props @created(20-06-08 18:48) @done(20-06-08 19:34)
     ☐ Run updateImport on most or all components @created(20-06-08 18:02)
-    ☐ Update main template with Omit and extended props @created(20-06-08 18:48)
-    ☐ Checkbox: Type '{ children?: ReactNode; }' has no properties in common with type 'IntrinsicAttributes & CheckboxProps'.  TS2559 @created(20-06-08 14:47)
-      <Checkbox
+    ✔ Checkbox: Type '{ children?: ReactNode; }' has no properties in common with type 'IntrinsicAttributes & CheckboxProps'.  TS2559 @created(20-06-08 14:47) @done(20-06-08 19:34)
+        <Checkbox
         checked={checked}
         onChange={handleChange}
         inputProps={{ 'aria-label': 'primary checkbox' }}
-      />
+        />
 
-    ☐ Omit props @created(20-06-04 23:29)
+    ✔ Omit props @created(20-06-04 23:29) @done(20-06-08 19:34)
         import { <%= name %> as Material<%= name %>, <%= name %>Props as Material<%= name %>Props } from '@material-ui/core';
 
         export interface Props 
