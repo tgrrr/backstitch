@@ -12,7 +12,102 @@ exports[`ButtonGroup: default 1`] = `
       className="MuiButtonGroup-root"
       role="group"
     >
-      ButtonGroup
+      <div
+        className="sc-AxirZ ktnnZK"
+      >
+        <div
+          className="Button MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
+          data-testid="Button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              One
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="sc-AxirZ ktnnZK"
+      >
+        <div
+          className="Button MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
+          data-testid="Button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Two
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="sc-AxirZ ktnnZK"
+      >
+        <div
+          className="Button MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
+          data-testid="Button"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Three
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -17,7 +17,35 @@ exports[`Breadcrumbs: default 1`] = `
         <li
           className="MuiBreadcrumbs-li"
         >
-          Breadcrumbs
+          <span>
+            1
+          </span>
+        </li>
+        <li
+          aria-hidden={true}
+          className="MuiBreadcrumbs-separator"
+        >
+          /
+        </li>
+        <li
+          className="MuiBreadcrumbs-li"
+        >
+          <span>
+            2
+          </span>
+        </li>
+        <li
+          aria-hidden={true}
+          className="MuiBreadcrumbs-separator"
+        >
+          /
+        </li>
+        <li
+          className="MuiBreadcrumbs-li"
+        >
+          <span>
+            3
+          </span>
         </li>
       </ol>
     </nav>

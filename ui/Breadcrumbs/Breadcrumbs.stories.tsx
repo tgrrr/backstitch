@@ -14,8 +14,14 @@ storiesOf('Breadcrumbs', module).add('Default', () => (
     <Breadcrumbs
         className='myClass'
     >
-        <>
-            Breadcrumbs
-        </>
+        <span>
+            1
+        </span>
+        <span>
+            2
+        </span>
+        <span>
+            3
+        </span>
     </Breadcrumbs>
 ));

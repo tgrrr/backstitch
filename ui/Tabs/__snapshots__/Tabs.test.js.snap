@@ -26,7 +26,15 @@ exports[`Tabs: default 1`] = `
           onKeyDown={[Function]}
           role="tablist"
         >
-          Tabs
+          <div
+            fullWidth={false}
+            indicator={false}
+            selected={false}
+            textColor="inherit"
+            value={0}
+          >
+            Tabs
+          </div>
         </div>
       </div>
     </div>
