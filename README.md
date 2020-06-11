@@ -6,22 +6,42 @@
 
 A simple wrapper pattern for react frameworks, including [Material UI]
 
-It's nothing new to developers, but here's a project to quickly bootstrap your project with component wrappers / adapter pattern.
+It's nothing new to developers, but here's a project to quickly bootstrap your project with **component wrappers** (sometimes called the *adapter pattern*).
 
-## Features
+### What we get with it
 
-✔ Quicker app setup inside whichever starter you want (CRA, Next, etc)
-✔ Easily plug and play with [Material UI] (currently v4.10.1)
-    ☐ (Bootstrap and more to come! Contributions welcome)
-✔ Quick Templating with Hygen
-✔ Simpler unit testing
-✔ Built in tests
-✔ StoryBook
-✔ styled-components (which can be easily switched)
-✔ TypeScript
-✔ Consistent style throughout your app
-✔ DRYer code
-✔ Easily replace one library with another (say Material with Bootstrap), and keep the same api
+- Easily replace one library with another (eg replace `Material-ui` with `Bootstrap`), and keep the same Component API throughout your app
+- Quicker app setup inside whichever starter you want (CRA, Next, etc)
+- Quickly generate new UI component wrappers with Hygen
+- Quickly generate all of our UI components with a single shell command
+- Consistently style throughout our app.
+- DRYer code
+
+Eg. Switch every `Button` in our app from contained to outlined with a single line of code:
+
+```jsx
+<Button 
++   variant='outlined'
+-   variant='contained'
+/>
+```
+
+### What it's not
+
+- Backstitch is *not* a npm library - it's boilerplate code to clone the code into your project, and code from there
+
+### Features
+
+- ✔ Easily plug and play with [Material UI] (currently v4.10.1) 
+    ☐ (Bootstrap and more to come! Contributions welcome) 
+- ✔ [StoryBook]
+- ✔ Built-in unit testing - WIP
+    ☐ [Cypress]
+    ☐ [React Testing Library] 
+- ✔ [Styled components] (which can be easily switched) 
+    ☐ Easily switched for css-modules
+    ☐ Switched for emotion
+- ✔ TypeScript
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 ## But why?
@@ -50,90 +70,40 @@ Refactor reused components themselves using your own pattern and defaults
 
 ### Before refactor
 
-*example from [Material-ui buttons](https://material-ui.com/components/buttons/) minus style*
+*example from [Material-ui buttons] minus style*
 
 ```ts
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
-import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
-import SaveIcon from '@material-ui/icons/Save';
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    button: {
-      margin: theme.spacing(1),
-    },
-  }),
-);
-
 export default function IconLabelButtons() {
-    const classes = useStyles();
-
-    return (
-        <Button
-            variant="contained"
-            disabled
-            color="secondary"
-            className={classes.button}
-            startIcon={<KeyboardVoiceIcon />}
-        >
-            Talk
-        </Button>
-        <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            className={classes.button}
-            startIcon={<SaveIcon />}
-        >
-            Save
-        </Button>
-        <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            className={classes.button}
-            startIcon={<CloudUploadIcon />}
-        >
-            Upload
-        </Button>
-    )
+    ...
+    <Button
+        variant="contained"
+        disabled
+        color="secondary"
+        className={classes.button}
+        startIcon={<KeyboardVoiceIcon />}
+    >
+        Talk
+    </Button>
 };
 ```
 
 ### After refactor
 
 ```ts
-import React from 'react';
-import { Button } from 'common/ui';
-import { CloudUploadIcon, KeyboardVoiceIcon, SaveIcon } from 'common/icons'; // icons are a WIP
-
 export default function IconLabelButtons() {
+    ...
     <Button
         disabled
         startIcon={<KeyboardVoiceIcon />}
     >
         Talk
     </Button>
-    <Button
-        startIcon={<SaveIcon />}
-    >
-        Save
-    </Button>
-    <Button
-        className={classes.button}
-        startIcon={<CloudUploadIcon />}
-    >
-        Upload
-    </Button>
 }
 ```
 
-## Getting Starteed
+## Getting Started
 
-### Eg. Setup with Create React App (CRA)
+Here's how you can quickly boostrap with [Create React App (CRA)]
 
 ```zsh
 npx create-react-app MyApp  --template typescript
@@ -149,7 +119,7 @@ Clone `backstitch` into the `./src/common` folder of your app:
 git clone git@github.com:tgrrr/backstitch.git src/common/
 ```
 
-### Using [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) (optional)
+### Using [Git Submodules] (optional)
 
 ```zsh
 mkdir -p src/common/
@@ -198,9 +168,9 @@ yarn add -D @storybook/react babel-loader
 
 ### 4. Setup Storybook
 
-## [Storybook](https://storybook.js.org/docs/guides/guide-react/)
+## [StoryBook]
 
-[Install Storybook](https://storybook.js.org/docs/guides/guide-react/) to your project
+[Install [StoryBook] to your project
 
 add the following scripts to your `package.json`:
 
@@ -299,7 +269,7 @@ ___
 
 ## Generating custom components on the fly
 
-We're using [Hygen](https://www.hygen.io/quick-start) to template quickly
+We're using [Hygen] to template quickly
 
 ### Usage
 
@@ -424,14 +394,24 @@ Here's the current [todo list](./src/common/backstitch.todo)
 
 **Eg.**
 
-`chore`: add Oyster build script
-`docs`: explain hat wobble
-`feat`: add beta sequence
-`fix`: remove broken confirmation message
-`refactor`: share logic between 4d3d3d3 and flarhgunnstow
-`style`: convert tabs to spaces
-`test`: ensure Tayne retains clothing
+- `chore`: add Oyster build script
+- `docs`: explain hat wobble
+- `feat`: add beta sequence
+- `fix`: remove broken confirmation message
+- `refactor`: share logic between 4d3d3d3 and flarhgunnstow
+- `style`: convert tabs to spaces
+- `test`: ensure Tayne retains clothing
 
+[Create React App (CRA)]: https://reactjs.org/docs/create-a-new-react-app.html
+[Cypress]: https://www.cypress.io/
+[Git Submodules]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[Hygen]: https://www.hygen.io/quick-start
 [Material UI]: https://material-ui.com/
-[Semantic commit messages]: https://seesparkbox.com/foundry/semantic_commit_messages
+[Material-ui buttons]: https://material-ui.com/components/buttons/
 [Minimising bundle size with tree shaking]: https://material-ui.com/guides/minimizing-bundle-size/
+[React Testing Library]: https://github.com/testing-library/react-testing-library
+[Semantic commit messages]: https://seesparkbox.com/foundry/semantic_commit_messages
+[StoryBook]: https://storybook.js.org/docs/guides/guide-react/
+[Styled components]: https://styled-components.com/
+[Hygen CRA]: https://github.com/jondot/hygen-CRA
+[Hygen]: https://www.hygen.io/quick-start
