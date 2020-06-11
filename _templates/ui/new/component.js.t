@@ -40,7 +40,7 @@ class <%= name %> extends React.PureComponent<Props, State> {
 
         return (
             <<%= name %>Styled>
-                <div className={['<%= comp %>', className && {className}].join(' ')} data-testid='<%= comp %>'>
+                <div className={['<%= comp %>', className && className].join(' ')} data-testid='<%= comp %>'>
                     <Material<%= name %> {...rest}>
                         {children}
                     </Material<%= name %>>
